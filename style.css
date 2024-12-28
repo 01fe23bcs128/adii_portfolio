@@ -100,3 +100,69 @@ nav ul li a:hover {
     font-size: 24px; /* Font size for descriptions */
     color: #f8f8f2; /* Ensure text in description is white */
 }
+
+/* Course Reflections Section Styling */
+#course-reflections {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #44475a;
+    border-radius: 10px;
+}
+
+#course-reflections h1 {
+    color: #f8f8f2;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#course-reflections h2 {
+    color: #ff79c6;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#course-reflections h3 {
+    color: #8be9fd;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#course-reflections ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#course-reflections ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#course-reflections ul li strong {
+    color: #bd93f9;
+}
+
+#course-reflections p {
+    font-size: 18px;
+    color: #f8f8f2;
+    line-height: 1.5;
+}
+
+#course-reflections p strong {
+    color: #ff79c6;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #44475a;
+    color: #f8f8f2;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 16px;
+    color: #f8f8f2;
+}
