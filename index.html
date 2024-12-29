@@ -393,159 +393,305 @@
         </li>
     </ul>
 
-     <h1>Healthcare Infrastructure Project 🏥</h1>
+    <h1>Healthcare Infrastructure 🏥</h1>
+<hr>
+<h2>1. Patient Management (Binary Search Tree, AVL Tree)</h2>
+<p><strong>Idea:</strong> Efficient management of patient records for fast access, updates, and deletions.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Binary Search Tree (BST) and AVL Tree:</strong> Used to store patient records (sorted by patient ID or name), allowing for quick lookups, insertions, and deletions.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Divide and Conquer: Divide the search and update operations into subtrees, which are smaller and easier to manage.</li>
+            <li>Space and Time Tradeoff: AVL trees maintain balanced nodes, optimizing search time at the cost of extra memory for balancing operations.</li>
+            <li>Time Efficiency: Search, insert, and delete operations are O(log n) in an AVL tree.</li>
+            <li>Space Efficiency: The space complexity is O(n) as it stores patient records.</li>
+        </ul>
+    </li>
+</ul>
 
-    <div class="section">
-        <h2>1. Patient Management (Binary Search Tree, AVL Tree)</h2>
-        <p class="idea">Idea: Efficient management of patient records for fast access, updates, and deletions.</p>
-        <p class="description">
-            Binary Search Tree (BST) and AVL Tree can be used to store patient records (sorted by patient ID or name), allowing for quick lookups, insertions, and deletions.
-        </p>
-        <div class="design-techniques">
-            <ul>
-                <li><strong>Divide and Conquer:</strong> Divide the search and update operations into subtrees, which are smaller and easier to manage.</li>
-                <li><strong>Space and Time Tradeoff:</strong> AVL trees maintain balanced nodes, optimizing search time at the cost of extra memory for balancing operations.</li>
-                <li><strong>Time Efficiency:</strong> Search, insert, and delete operations are O(log n) in an AVL tree.</li>
-                <li><strong>Space Efficiency:</strong> The space complexity is O(n) as it stores patient records.</li>
-            </ul>
-        </div>
-    </div>
+<h2>2. Emergency Response System (Priority Queue/Heap)</h2>
+<p><strong>Idea:</strong> Prioritize critical patients for emergency treatment.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Priority Queue (using a Heap):</strong> Prioritizes patients based on the severity of their condition.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Greedy Technique: Always choose the most urgent case in each iteration.</li>
+            <li>Time Efficiency: Inserting into and removing from a heap is O(log n).</li>
+            <li>Space Efficiency: The heap uses O(n) space for storing patient data.</li>
+        </ul>
+    </li>
+</ul>
 
-    <div class="section">
-        <h2>2. Emergency Response System (Priority Queue/Heap)</h2>
-        <p class="idea">Idea: Prioritize critical patients for emergency treatment.</p>
-        <p class="description">
-            Priority Queue (using a Heap) prioritizes patients based on the severity of their condition.
-        </p>
-        <div class="design-techniques">
-            <ul>
-                <li><strong>Greedy Technique:</strong> Always choose the most urgent case in each iteration.</li>
-                <li><strong>Time Efficiency:</strong> Inserting into and removing from a heap is O(log n).</li>
-                <li><strong>Space Efficiency:</strong> The heap uses O(n) space for storing patient data.</li>
-            </ul>
-        </div>
-    </div>
+<h2>3. Healthcare Resource Allocation (Graph, Dijkstra’s Algorithm)</h2>
+<p><strong>Idea:</strong> Allocate resources efficiently by modeling healthcare facilities as a graph.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Graph Representation:</strong> Nodes represent hospitals and resources; edges represent the availability of connections or resources.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Dynamic Programming: Use Dijkstra’s algorithm to find the optimal path between hospitals and resource centers.</li>
+            <li>Time Efficiency: Dijkstra’s algorithm has a time complexity of O(E log V) with a priority queue.</li>
+            <li>Space Efficiency: The space complexity is O(V + E) as it stores the graph and calculates the shortest paths.</li>
+        </ul>
+    </li>
+</ul>
 
-    <div class="section">
-        <h2>3. Healthcare Resource Allocation (Graph, Dijkstra’s Algorithm)</h2>
-        <p class="idea">Idea: Allocate resources efficiently by modeling healthcare facilities as a graph.</p>
-        <p class="description">
-            Graph Representation: Nodes represent hospitals and resources; edges represent the availability of connections or resources.
-        </p>
-        <div class="design-techniques">
-            <ul>
-                <li><strong>Dynamic Programming:</strong> Use Dijkstra’s algorithm to find the optimal path between hospitals and resource centers.</li>
-                <li><strong>Time Efficiency:</strong> Dijkstra’s algorithm has a time complexity of O(E log V) with a priority queue.</li>
-                <li><strong>Space Efficiency:</strong> The space complexity is O(V + E) as it stores the graph and calculates the shortest paths.</li>
-            </ul>
-        </div>
-    </div>
+<h2>4. Appointment Scheduling (Queue/Linked List)</h2>
+<p><strong>Idea:</strong> Manage and organize patient appointments efficiently.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Queue:</strong> Patients are processed in the order of their appointment (FIFO).</li>
+    <li><strong>Linked List:</strong> For dynamic appointment scheduling where times can be adjusted or rescheduled.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Lazy Propagation: Only update appointment statuses when necessary (e.g., after confirmation).</li>
+            <li>Time Efficiency: O(1) for insertion and deletion in a queue or linked list.</li>
+            <li>Space Efficiency: The space complexity is O(n) as it stores the list of appointments.</li>
+        </ul>
+    </li>
+</ul>
 
-    <div class="section">
-        <h2>4. Appointment Scheduling (Queue/Linked List)</h2>
-        <p class="idea">Idea: Manage and organize patient appointments efficiently.</p>
-        <p class="description">
-            Queue: Patients are processed in the order of their appointment (FIFO).
-        </p>
-        <div class="design-techniques">
-            <ul>
-                <li><strong>Lazy Propagation:</strong> Only update appointment statuses when necessary (e.g., after confirmation).</li>
-                <li><strong>Time Efficiency:</strong> O(1) for insertion and deletion in a queue or linked list.</li>
-                <li><strong>Space Efficiency:</strong> The space complexity is O(n) as it stores the list of appointments.</li>
-            </ul>
-        </div>
-    </div>
+<h2>5. Drug Inventory Management (Hashing, Lookup Table)</h2>
+<p><strong>Idea:</strong> Maintain drug inventory and ensure availability when needed.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Hashing:</strong> Use hash tables for efficient storage and retrieval of drug information.</li>
+    <li><strong>Lookup Table:</strong> A simple table to store drug details that do not change frequently (like names, dosages, and prices).</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Space and Time Tradeoff: Hashing offers quick access but requires more memory.</li>
+            <li>Time Efficiency: Hash table lookups are O(1).</li>
+            <li>Space Efficiency: The space complexity is O(n), where n is the number of drugs in the inventory.</li>
+        </ul>
+    </li>
+</ul>
 
-    <div class="section">
-        <h2>5. Drug Inventory Management (Hashing, Lookup Table)</h2>
-        <p class="idea">Idea: Maintain drug inventory and ensure availability when needed.</p>
-        <p class="description">
-            Hashing: Use hash tables for efficient storage and retrieval of drug information.
-        </p>
-        <div class="design-techniques">
-            <ul>
-                <li><strong>Space and Time Tradeoff:</strong> Hashing offers quick access but requires more memory.</li>
-                <li><strong>Time Efficiency:</strong> Hash table lookups are O(1).</li>
-                <li><strong>Space Efficiency:</strong> The space complexity is O(n), where n is the number of drugs in the inventory.</li>
-            </ul>
-        </div>
-    </div>
+<h2>6. Patient Data Search (Trie, Hashing)</h2>
+<p><strong>Idea:</strong> Implement a fast search system for patient data.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Trie:</strong> Used for searching patient names or medical conditions based on prefixes.</li>
+    <li><strong>Hashing:</strong> Enables quick lookup of patient records by their unique IDs.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Pre-Computing: Precompute and store frequent search queries for fast access.</li>
+            <li>Time Efficiency: Trie operations are O(m), where m is the length of the word, and hash lookups are O(1).</li>
+            <li>Space Efficiency: Tries use O(m * n) space, where m is the average length of the words, and n is the number of words.</li>
+        </ul>
+    </li>
+</ul>
 
-    <div class="section">
-        <h2>6. Patient Data Search (Trie, Hashing)</h2>
-        <p class="idea">Idea: Implement a fast search system for patient data.</p>
-        <p class="description">
-            Trie: Used for searching patient names or medical conditions based on prefixes.
-        </p>
-        <div class="design-techniques">
-            <ul>
-                <li><strong>Pre-Computing:</strong> Precompute and store frequent search queries for fast access.</li>
-                <li><strong>Time Efficiency:</strong> Trie operations are O(m), where m is the length of the word, and hash lookups are O(1).</li>
-                <li><strong>Space Efficiency:</strong> Tries use O(m * n) space, where m is the average length of the words, and n is the number of words.</li>
-            </ul>
-        </div>
-    </div>
+<h2>7. Healthcare Facility Network (Union-Find)</h2>
+<p><strong>Idea:</strong> Track the connectedness of healthcare facilities in the city.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Union-Find:</strong> Efficiently manage and merge healthcare facilities (hospitals, clinics) as new ones are added to the network.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Union-Find is efficient for managing connected components of healthcare facilities.</li>
+            <li>Time Efficiency: The time complexity for union and find operations is O(α(n)), where α is the inverse Ackermann function.</li>
+            <li>Space Efficiency: The space complexity is O(n), as we store the parent-child relationships.</li>
+        </ul>
+    </li>
+</ul>
 
-    <div class="section">
-        <h2>7. Healthcare Facility Network (Union-Find)</h2>
-        <p class="idea">Idea: Track the connectedness of healthcare facilities in the city.</p>
-        <p class="description">
-            Union-Find: Efficiently manage and merge healthcare facilities (hospitals, clinics) as new ones are added to the network.
-        </p>
-        <div class="design-techniques">
-            <ul>
-                <li><strong>Union-Find:</strong> Efficient for managing connected components of healthcare facilities.</li>
-                <li><strong>Time Efficiency:</strong> The time complexity for union and find operations is O(α(n)), where α is the inverse Ackermann function.</li>
-                <li><strong>Space Efficiency:</strong> The space complexity is O(n), as we store the parent-child relationships.</li>
-            </ul>
-        </div>
-    </div>
+<h2>8. Hospital Occupancy Tracking (Segment Tree)</h2>
+<p><strong>Idea:</strong> Track room or bed availability in real-time across hospitals.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Segment Tree:</strong> Allows efficient range queries and updates, useful for tracking room availability over time.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Dynamic Programming: Used to update room availability dynamically.</li>
+            <li>Time Efficiency: Query and update operations take O(log n).</li>
+            <li>Space Efficiency: Segment trees use O(n) space.</li>
+        </ul>
+    </li>
+</ul>
 
-    <div class="section">
-        <h2>8. Hospital Occupancy Tracking (Segment Tree)</h2>
-        <p class="idea">Idea: Track room or bed availability in real-time across hospitals.</p>
-        <p class="description">
-            Segment Tree: Allows efficient range queries and updates, useful for tracking room availability over time.
-        </p>
-        <div class="design-techniques">
-            <ul>
-                <li><strong>Dynamic Programming:</strong> Used to update room availability dynamically.</li>
-                <li><strong>Time Efficiency:</strong> Query and update operations take O(log n).</li>
-                <li><strong>Space Efficiency:</strong> Segment trees use O(n) space.</li>
-            </ul>
-        </div>
-    </div>
+<h2>9. Healthcare Data Reporting (Fenwick Tree)</h2>
+<p><strong>Idea:</strong> Generate quick reports on healthcare metrics such as patient visits or treatment data.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Fenwick Tree:</strong> Efficiently handles cumulative frequency queries, which is useful for tracking healthcare data over time.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Pre-Computing: Precompute cumulative data for fast reporting.</li>
+            <li>Time Efficiency: Both updates and queries take O(log n) time.</li>
+            <li>Space Efficiency: The space complexity is O(n).</li>
+        </ul>
+    </li>
+</ul>
 
-    <div class="section">
-        <h2>9. Healthcare Data Reporting (Fenwick Tree)</h2>
-        <p class="idea">Idea: Generate quick reports on healthcare metrics such as patient visits or treatment data.</p>
-        <p class="description">
-            Fenwick Tree: Efficiently handles cumulative frequency queries, which is useful for tracking healthcare data over time.
-        </p>
-        <div class="design-techniques">
-            <ul>
-                <li><strong>Pre-Computing:</strong> Precompute cumulative data for fast reporting.</li>
-                <li><strong>Time Efficiency:</strong> Both updates and queries take O(log n) time.</li>
-                <li><strong>Space Efficiency:</strong> The space complexity is O(n).</li>
-            </ul>
-        </div>
-    </div>
+<h2>10. Medical Record History (Stack)</h2>
+<p><strong>Idea:</strong> Keep a stack of recent treatments or medical records for each patient.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Stack:</strong> Track the most recent treatments or records, with the ability to revert to a previous state if necessary.</li>
+    <li><strong>Pattern Recognition:</strong> Repeated actions of adding and removing records in LIFO order.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Backtracking: Use a stack for undoing treatments or actions that are not required.</li>
+            <li>Time Efficiency: Both push and pop operations take O(1) time.</li>
+            <li>Space Efficiency: The space complexity is O(n), where n is the number of records.</li>
+        </ul>
+    </li>
+</ul>
 
-    <div class="section">
-        <h2>10. Medical Record History (Stack)</h2>
-        <p class="idea">Idea: Keep a stack of recent treatments or medical records for each patient.</p>
-        <p class="description">
-            Stack: Track the most recent treatments or records, with the ability to revert to a previous state if necessary.
-        </p>
-        <div class="design-techniques">
-            <ul>
-                <li><strong>Backtracking:</strong> Use a stack for undoing treatments or actions that are not required.</li>
-                <li><strong>Time Efficiency:</strong> Both push and pop operations take O(1) time.</li>
-                <li><strong>Space Efficiency:</strong> The space complexity is O(n), where n is the number of records.</li>
-            </ul>
-        </div>
-    </div>
-</div>
+
+    <h1>Education Hub 🎓</h1>
+<hr>
+<h2>1. Smart Education System (Graph & Shortest Path Algorithms)</h2>
+<p><strong>Idea:</strong> Model the education network (schools, colleges, research institutions) as a graph to optimize communication and resource allocation.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Graph Representation:</strong> Nodes represent educational institutions; edges represent pathways or communication networks.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Dijkstra’s Algorithm or A* Search for optimizing travel paths between institutions.</li>
+            <li>Time Efficiency: Dijkstra’s algorithm runs in O(E log V).</li>
+            <li>Space Efficiency: Space complexity is O(V + E).</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>2. E-learning Platforms and Resource Allocation (Hashing, Lookup Tables, Binary Search Tree)</h2>
+<p><strong>Idea:</strong> Efficiently manage e-learning resources and platform data such as course catalogs, student data, and faculty information.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Hashing:</strong> Use hash tables for fast access to student records, course data, and faculty information.</li>
+    <li><strong>Lookup Tables:</strong> Store fixed data such as course prerequisites, student enrollment status, or faculty availability.</li>
+    <li><strong>Binary Search Tree (BST):</strong> Maintain an ordered list of students, courses, or faculty members.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>AVL Tree or Red-Black Tree for maintaining sorted data for efficient searching.</li>
+            <li>Time Efficiency: Hashing offers O(1) lookup, while BST operations take O(log n).</li>
+            <li>Space Efficiency: Hash tables use O(n), while BSTs use O(n).</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>3. Enrollment System (Priority Queue/Heap)</h2>
+<p><strong>Idea:</strong> Prioritize student enrollments based on available seats, course preferences, or admission scores.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Min-Heap or Max-Heap:</strong> Prioritize students for course enrollment based on score, preference, or availability.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Greedy Technique: Always enroll the highest-priority student available.</li>
+            <li>Time Efficiency: Heap operations run in O(log n).</li>
+            <li>Space Efficiency: The space complexity is O(n).</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>4. Classroom Scheduling (Interval Tree, Segment Tree)</h2>
+<p><strong>Idea:</strong> Optimize classroom scheduling and resource allocation across different institutions.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Segment Tree:</strong> Use for managing time slots and available classrooms across multiple institutions.</li>
+    <li><strong>Interval Tree:</strong> Efficiently manage classroom availability and prevent conflicts during scheduling.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Segment Tree allows for efficient querying of available time slots.</li>
+            <li>Interval Tree handles overlapping class schedules.</li>
+            <li>Time Efficiency: Both trees provide O(log n) query and update time.</li>
+            <li>Space Efficiency: Space complexity for both trees is O(n).</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>5. Student and Faculty Management (Linked List, Binary Search Tree)</h2>
+<p><strong>Idea:</strong> Manage dynamic data about students, faculty, and staff, including shifts, roles, and activities.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Linked List:</strong> Use for dynamically managing student or faculty details, where data might change frequently (e.g., grades, shifts).</li>
+    <li><strong>Binary Search Tree (BST):</strong> Organize students or faculty members based on specific attributes like GPA or department.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Lazy Propagation: Update records only when necessary, especially in large institutions.</li>
+            <li>Time Efficiency: Linked list operations are O(1) for insertion and deletion, and BST operations take O(log n).</li>
+            <li>Space Efficiency: Linked lists and BSTs both require O(n) space.</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>6. Online Examination System (Queue/Deque)</h2>
+<p><strong>Idea:</strong> Manage the flow of students during online examinations, ensuring efficient exam scheduling and result processing.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Queue:</strong> Manage students waiting for exam entry, ensuring fair processing in a First-In-First-Out (FIFO) manner.</li>
+    <li><strong>Deque:</strong> A double-ended queue can manage students entering or leaving the exam in different phases.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Lazy Propagation: Only update records when a student enters or exits the exam.</li>
+            <li>Time Efficiency: Queue and deque operations are O(1).</li>
+            <li>Space Efficiency: The space complexity is O(n).</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>7. Performance Analytics (Fenwick Tree, Sparse Table)</h2>
+<p><strong>Idea:</strong> Track and analyze performance data such as exam scores, attendance, and project submissions.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Fenwick Tree:</strong> Track cumulative performance metrics such as total grades or attendance.</li>
+    <li><strong>Sparse Table:</strong> Efficiently query performance data across large datasets for static queries like overall exam performance.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Fenwick Tree helps with cumulative performance tracking.</li>
+            <li>Sparse Table is ideal for static range queries.</li>
+            <li>Time Efficiency: Fenwick Tree operations take O(log n), and Sparse Table queries are O(1).</li>
+            <li>Space Efficiency: Both structures use O(n) space.</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>8. Scholarship Management (Priority Queue/Heap)</h2>
+<p><strong>Idea:</strong> Manage scholarships by prioritizing students based on merit, need, and other factors.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Min-Heap or Max-Heap:</strong> Use a heap to prioritize students for scholarships based on their scores or financial need.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Greedy Technique: Allocate scholarships to the most eligible students based on priority.</li>
+            <li>Time Efficiency: Heap operations are O(log n).</li>
+            <li>Space Efficiency: The space complexity is O(n).</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>9. Course Recommendation System (Graph, Dynamic Programming)</h2>
+<p><strong>Idea:</strong> Recommend courses to students based on their past choices, interests, and academic performance.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Graph:</strong> Represent course prerequisites and student interests as a graph to recommend the next best course.</li>
+    <li><strong>Dynamic Programming:</strong> Use dynamic programming to find the optimal course selection based on prior selections and student preferences.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Dynamic Programming can optimize the recommendation process.</li>
+            <li>Time Efficiency: The time complexity for dynamic programming is typically O(n²) or O(n log n) based on the problem size.</li>
+            <li>Space Efficiency: Space complexity is O(n) for storing previous results.</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>10. Virtual Labs and Simulations (Queue/Deque, Graph)</h2>
+<p><strong>Idea:</strong> Manage virtual labs and simulations where students can conduct experiments in an online environment.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Queue/Deque:</strong> Manage the queue of students awaiting access to virtual labs or simulations.</li>
+    <li><strong>Graph:</strong> Model the experiments as a graph to track various steps in a virtual experiment.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Lazy Propagation: Only update when the student enters or finishes an experiment.</li>
+            <li>Time Efficiency: Queue and deque operations are O(1).</li>
+            <li>Space Efficiency: The space complexity is O(n).</li>
+        </ul>
+    </li>
+</ul>
 
 
 
