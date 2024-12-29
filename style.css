@@ -151,6 +151,88 @@ nav ul li a:hover {
     color: #ff79c6;
 }
 
+/* Home Section Styling */
+#home {
+    padding: 30px;
+    background-color: #44475a;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+#home h2 {
+    color: #f8f8f2;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#home p {
+    color: #f8f8f2;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.business-case, .course-reflections, .sdg, .implementation {
+    background-color: #6272a4;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.business-case:hover, .course-reflections:hover, .sdg:hover, .implementation:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+h3, h4 {
+    color: #f8f8f2;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 5px 0;
+    font-size: 16px;
+    color: #f8f8f2;
+}
+
+ul li strong {
+    color: #bd93f9;
+}
+
+/* Hover effects for headings */
+#home h3:hover, #home h4:hover {
+    color: #f16e61;
+    cursor: pointer;
+}
+
+/* Add some spacing and subtle animations */
+#home p, .business-case p, .course-reflections p, .sdg p, .implementation p {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+#home p:nth-child(2), .business-case p, .course-reflections p, .sdg p, .implementation p {
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Footer Styling */
 footer {
     text-align: center;
