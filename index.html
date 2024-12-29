@@ -393,6 +393,160 @@
         </li>
     </ul>
 
+     <h1>Healthcare Infrastructure Project 🏥</h1>
+
+    <div class="section">
+        <h2>1. Patient Management (Binary Search Tree, AVL Tree)</h2>
+        <p class="idea">Idea: Efficient management of patient records for fast access, updates, and deletions.</p>
+        <p class="description">
+            Binary Search Tree (BST) and AVL Tree can be used to store patient records (sorted by patient ID or name), allowing for quick lookups, insertions, and deletions.
+        </p>
+        <div class="design-techniques">
+            <ul>
+                <li><strong>Divide and Conquer:</strong> Divide the search and update operations into subtrees, which are smaller and easier to manage.</li>
+                <li><strong>Space and Time Tradeoff:</strong> AVL trees maintain balanced nodes, optimizing search time at the cost of extra memory for balancing operations.</li>
+                <li><strong>Time Efficiency:</strong> Search, insert, and delete operations are O(log n) in an AVL tree.</li>
+                <li><strong>Space Efficiency:</strong> The space complexity is O(n) as it stores patient records.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2. Emergency Response System (Priority Queue/Heap)</h2>
+        <p class="idea">Idea: Prioritize critical patients for emergency treatment.</p>
+        <p class="description">
+            Priority Queue (using a Heap) prioritizes patients based on the severity of their condition.
+        </p>
+        <div class="design-techniques">
+            <ul>
+                <li><strong>Greedy Technique:</strong> Always choose the most urgent case in each iteration.</li>
+                <li><strong>Time Efficiency:</strong> Inserting into and removing from a heap is O(log n).</li>
+                <li><strong>Space Efficiency:</strong> The heap uses O(n) space for storing patient data.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>3. Healthcare Resource Allocation (Graph, Dijkstra’s Algorithm)</h2>
+        <p class="idea">Idea: Allocate resources efficiently by modeling healthcare facilities as a graph.</p>
+        <p class="description">
+            Graph Representation: Nodes represent hospitals and resources; edges represent the availability of connections or resources.
+        </p>
+        <div class="design-techniques">
+            <ul>
+                <li><strong>Dynamic Programming:</strong> Use Dijkstra’s algorithm to find the optimal path between hospitals and resource centers.</li>
+                <li><strong>Time Efficiency:</strong> Dijkstra’s algorithm has a time complexity of O(E log V) with a priority queue.</li>
+                <li><strong>Space Efficiency:</strong> The space complexity is O(V + E) as it stores the graph and calculates the shortest paths.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>4. Appointment Scheduling (Queue/Linked List)</h2>
+        <p class="idea">Idea: Manage and organize patient appointments efficiently.</p>
+        <p class="description">
+            Queue: Patients are processed in the order of their appointment (FIFO).
+        </p>
+        <div class="design-techniques">
+            <ul>
+                <li><strong>Lazy Propagation:</strong> Only update appointment statuses when necessary (e.g., after confirmation).</li>
+                <li><strong>Time Efficiency:</strong> O(1) for insertion and deletion in a queue or linked list.</li>
+                <li><strong>Space Efficiency:</strong> The space complexity is O(n) as it stores the list of appointments.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>5. Drug Inventory Management (Hashing, Lookup Table)</h2>
+        <p class="idea">Idea: Maintain drug inventory and ensure availability when needed.</p>
+        <p class="description">
+            Hashing: Use hash tables for efficient storage and retrieval of drug information.
+        </p>
+        <div class="design-techniques">
+            <ul>
+                <li><strong>Space and Time Tradeoff:</strong> Hashing offers quick access but requires more memory.</li>
+                <li><strong>Time Efficiency:</strong> Hash table lookups are O(1).</li>
+                <li><strong>Space Efficiency:</strong> The space complexity is O(n), where n is the number of drugs in the inventory.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>6. Patient Data Search (Trie, Hashing)</h2>
+        <p class="idea">Idea: Implement a fast search system for patient data.</p>
+        <p class="description">
+            Trie: Used for searching patient names or medical conditions based on prefixes.
+        </p>
+        <div class="design-techniques">
+            <ul>
+                <li><strong>Pre-Computing:</strong> Precompute and store frequent search queries for fast access.</li>
+                <li><strong>Time Efficiency:</strong> Trie operations are O(m), where m is the length of the word, and hash lookups are O(1).</li>
+                <li><strong>Space Efficiency:</strong> Tries use O(m * n) space, where m is the average length of the words, and n is the number of words.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>7. Healthcare Facility Network (Union-Find)</h2>
+        <p class="idea">Idea: Track the connectedness of healthcare facilities in the city.</p>
+        <p class="description">
+            Union-Find: Efficiently manage and merge healthcare facilities (hospitals, clinics) as new ones are added to the network.
+        </p>
+        <div class="design-techniques">
+            <ul>
+                <li><strong>Union-Find:</strong> Efficient for managing connected components of healthcare facilities.</li>
+                <li><strong>Time Efficiency:</strong> The time complexity for union and find operations is O(α(n)), where α is the inverse Ackermann function.</li>
+                <li><strong>Space Efficiency:</strong> The space complexity is O(n), as we store the parent-child relationships.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>8. Hospital Occupancy Tracking (Segment Tree)</h2>
+        <p class="idea">Idea: Track room or bed availability in real-time across hospitals.</p>
+        <p class="description">
+            Segment Tree: Allows efficient range queries and updates, useful for tracking room availability over time.
+        </p>
+        <div class="design-techniques">
+            <ul>
+                <li><strong>Dynamic Programming:</strong> Used to update room availability dynamically.</li>
+                <li><strong>Time Efficiency:</strong> Query and update operations take O(log n).</li>
+                <li><strong>Space Efficiency:</strong> Segment trees use O(n) space.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>9. Healthcare Data Reporting (Fenwick Tree)</h2>
+        <p class="idea">Idea: Generate quick reports on healthcare metrics such as patient visits or treatment data.</p>
+        <p class="description">
+            Fenwick Tree: Efficiently handles cumulative frequency queries, which is useful for tracking healthcare data over time.
+        </p>
+        <div class="design-techniques">
+            <ul>
+                <li><strong>Pre-Computing:</strong> Precompute cumulative data for fast reporting.</li>
+                <li><strong>Time Efficiency:</strong> Both updates and queries take O(log n) time.</li>
+                <li><strong>Space Efficiency:</strong> The space complexity is O(n).</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>10. Medical Record History (Stack)</h2>
+        <p class="idea">Idea: Keep a stack of recent treatments or medical records for each patient.</p>
+        <p class="description">
+            Stack: Track the most recent treatments or records, with the ability to revert to a previous state if necessary.
+        </p>
+        <div class="design-techniques">
+            <ul>
+                <li><strong>Backtracking:</strong> Use a stack for undoing treatments or actions that are not required.</li>
+                <li><strong>Time Efficiency:</strong> Both push and pop operations take O(1) time.</li>
+                <li><strong>Space Efficiency:</strong> The space complexity is O(n), where n is the number of records.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
 
 
     <!-- Contact Section -->
