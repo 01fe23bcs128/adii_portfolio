@@ -23,25 +23,82 @@ header h1 {
     font-size: 24px;
 }
 
-/* Navigation Styling */
+/* Navigation Styling with Cool Effects */
 nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    padding: 10px;
+    background: linear-gradient(90deg, #44475a, #6272a4);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
 }
 
 nav ul li a {
-    color: #8be9fd; /* Default link color */
+    color: #8be9fd;
     text-decoration: none;
     font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ff79c6; /* Hover color for navigation links */
+    background-color: #ff79c6;
+    color: #282a36;
+}
+
+/* Active Link Styling */
+nav ul li a.active {
+    background-color: #bd93f9;
+    color: #282a36;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Sticky Animation */
+nav.sticky {
+    animation: slideDown 0.5s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Section Styling */
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+.highlight {
+    font-size: 50px;
+    font-weight: bold;
 }
 
 /* Main Header Styling */
