@@ -226,6 +226,88 @@ ul li strong {
     animation-delay: 0.3s;
 }
 
+/* Business Cases Section Styling */
+#business-cases {
+    background-color: #44475a;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Headings with Animation */
+#business-cases h2 {
+    color: #f8f8f2;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+#business-cases h3 {
+    color: #ff79c6;
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: 0.3s; /* Delay the animation */
+}
+
+#business-cases p {
+    font-size: 18px;
+    color: #f8f8f2;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: 0.6s; /* Delay the animation for the paragraph */
+}
+
+/* Hover effects for each business case section */
+#business-cases h3:hover {
+    color: #f16e61;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#business-cases .business-case {
+    background-color: #6272a4;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+#business-cases .business-case:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* List Styling */
+#business-cases ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#business-cases ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #f8f8f2;
+}
+
+#business-cases ul li strong {
+    color: #bd93f9;
+}
+
+/* Animation for fading text in */
 @keyframes fadeInUp {
     to {
         opacity: 1;
@@ -239,12 +321,5 @@ footer {
     padding: 20px;
     background-color: #44475a;
     color: #f8f8f2;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    font-size: 16px;
-    color: #f8f8f2;
+    margin-top: 40px;
 }
