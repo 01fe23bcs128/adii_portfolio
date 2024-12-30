@@ -310,3 +310,91 @@ nav ul li a.active {
     font-size: 17px;
     color: #f8f8f2;
 }
+
+
+/* General Section Styling */
+#course-reflections {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    background: linear-gradient(135deg, #44475a, #282a36);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#course-reflections h2 {
+    text-align: center;
+    font-size: 34px;
+    color: #bd93f9;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Titles Styling */
+#course-reflections h3 {
+    color: #f8f8f2;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#course-reflections h3:hover {
+    color: #ff79c6;
+    transform: translateX(10px);
+}
+
+/* Subsection Titles Styling */
+#course-reflections h4 {
+    color: #f8f8f2;
+    font-size: 22px;
+    margin-top: 20px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#course-reflections h4:hover {
+    color: #ff79c6;
+    transform: translateX(10px);
+}
+
+/* Paragraph Styling */
+#course-reflections p {
+    font-size: 18px;
+    color: #d6d6d6;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* List Styling */
+#course-reflections ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#course-reflections ul li {
+    background: linear-gradient(90deg, #6272a4, #44475a);
+    color: #f8f8f2;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+
+#course-reflections ul li:hover {
+    background: #ff79c6;
+    color: #282a36;
+    transform: translateX(10px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover Effect for Course Section */
+#course-reflections:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
