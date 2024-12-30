@@ -179,3 +179,134 @@ nav ul li a.active {
     color: #282a36;
     transform: translateX(10px);
 }
+
+/* Section Styling */
+#business-cases {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    background: linear-gradient(135deg, #44475a, #282a36);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#business-cases h2 {
+    text-align: center;
+    font-size: 34px;
+    color: #bd93f9;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Case Box Styling */
+.case {
+    margin-bottom: 40px;
+    padding: 20px 30px;
+    background: #44475a;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    border-left: 6px solid #888;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.case:hover {
+    background-color: #6272a4;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Industrial Expansion */
+.case:nth-child(1) {
+    border-left-color: #ff79c6;
+}
+
+.case:nth-child(1) h3 {
+    color: #ff79c6;
+}
+
+.case:nth-child(1) ul li {
+    background: rgba(255, 121, 198, 0.1);
+    border-left: 4px solid #ff79c6;
+}
+
+.case:nth-child(1) ul li:hover {
+    background: #ff79c6;
+    color: #282a36;
+}
+
+/* Healthcare Infrastructure */
+.case:nth-child(2) {
+    border-left-color: #50fa7b;
+}
+
+.case:nth-child(2) h3 {
+    color: #50fa7b;
+}
+
+.case:nth-child(2) ul li {
+    background: rgba(80, 250, 123, 0.1);
+    border-left: 4px solid #50fa7b;
+}
+
+.case:nth-child(2) ul li:hover {
+    background: #50fa7b;
+    color: #282a36;
+}
+
+/* Education Hub */
+.case:nth-child(3) {
+    border-left-color: #8be9fd;
+}
+
+.case:nth-child(3) h3 {
+    color: #8be9fd;
+}
+
+.case:nth-child(3) ul li {
+    background: rgba(139, 233, 253, 0.1);
+    border-left: 4px solid #8be9fd;
+}
+
+.case:nth-child(3) ul li:hover {
+    background: #8be9fd;
+    color: #282a36;
+}
+
+/* Shared Styles */
+.case h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.case h4 {
+    font-size: 22px;
+    color: #f8f8f2;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.case p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #d6d6d6;
+    margin-bottom: 20px;
+}
+
+.case ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.case ul li {
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    transition: background 0.3s ease, color 0.3s ease;
+    font-size: 17px;
+    color: #f8f8f2;
+}
