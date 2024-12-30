@@ -398,3 +398,97 @@ nav ul li a.active {
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
 }
 
+/* SDG Mapping Section */
+#sdg-mapping {
+    background-color: #282a36;
+    color: #f8f8f2;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+#sdg-mapping h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff79c6;
+}
+
+.business-case {
+    background-color: #44475a;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.business-case h3 {
+    font-size: 2rem;
+    color: #50fa7b;
+    margin-bottom: 15px;
+}
+
+.business-case h4 {
+    font-size: 1.5rem;
+    color: #8be9fd;
+    margin-top: 15px;
+}
+
+.business-case p {
+    font-size: 1.1rem;
+    color: #f8f8f2;
+    line-height: 1.6;
+}
+
+.business-case:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.summary {
+    background-color: #44475a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.summary h3 {
+    font-size: 2rem;
+    color: #ff79c6;
+    margin-bottom: 15px;
+}
+
+.summary ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.summary ul li {
+    font-size: 1.1rem;
+    color: #f8f8f2;
+    margin-bottom: 10px;
+}
+
+.summary p {
+    font-size: 1.1rem;
+    color: #f8f8f2;
+    line-height: 1.6;
+}
+
+.summary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover Effects for Links */
+#sdg-mapping a {
+    color: #50fa7b;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#sdg-mapping a:hover {
+    color: #ff79c6;
+}
