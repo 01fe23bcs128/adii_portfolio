@@ -617,6 +617,11 @@ ul li, h1, h2 {
 }
 
 #contact a:hover {
-    color: #ff79c6; /* Light pink for hover effect */
+    color: ##f1a7d3; /* Light pink for hover effect */
+}
+
+/* Change link color to pastel yellow */
+a {
+    color: #f9e79f; /* Pastel yellow */
 }
 
