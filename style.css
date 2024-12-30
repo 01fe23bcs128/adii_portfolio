@@ -492,3 +492,106 @@ nav ul li a.active {
 #sdg-mapping a:hover {
     color: #ff79c6;
 }
+
+
+/* Global Styles */
+body {
+    background-color: #282a36;
+    color: #f8f8f2;
+    font-family: 'Arial', sans-serif;
+}
+
+h1, h2 {
+    color: #f8f8f2;
+}
+
+/* Section Styles */
+.section {
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #44475a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+    background-color: #6272a4;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #a8e063; /* Aesthetic muted green */
+}
+
+/* Paragraph & List Styles */
+p {
+    line-height: 1.6;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #5d8c9f; /* Darker shade of blue */
+    color: #282a36;
+    cursor: pointer;
+    padding: 10px;
+    transform: scale(1.05);
+}
+
+/* Border Styling */
+hr {
+    border: 1px solid #6272a4;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/* Interactive Design Elements */
+ul li ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: disc;
+    color: #ff79c6;
+}
+
+ul li ul li {
+    font-size: 1rem;
+    color: #f8f8f2;
+}
+
+/* Transitions */
+ul li, h1, h2 {
+    transition: color 0.3s ease;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
