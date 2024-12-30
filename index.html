@@ -316,12 +316,11 @@
     <h1>Industrial Expansion 🏭</h1>
     <hr>
     
-    <h2>1. City Planning and Infrastructure (<a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/graph.cpp" target="_blank">Graph</a>
- & Shortest Path Algorithms)</h2>
+    <h2>1. City Planning and Infrastructure (Graph & Shortest Path Algorithms)</h2>
     <p><strong>Idea:</strong> Model the city's infrastructure and roads as a graph to optimize transportation routes.</p>
     <p><strong>Description:</strong></p>
     <ul>
-        <li><strong>Graph Representation:</strong> Nodes represent locations (industrial zones, factories, highways); edges represent roads and connections.</li>
+        <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/graph.cpp" target="_blank">Graph</a> Representation:</strong> Nodes represent locations (industrial zones, factories, highways); edges represent roads and connections.</li>
         <li><strong>Design Techniques:</strong>
             <ul>
                 <li><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/dijkstra.cpp" target="_blank">Dijkstra’s Algorithm</a>
@@ -339,12 +338,15 @@
     <p><strong>Idea:</strong> Efficiently manage and query data related to industries, employees, inventory, and resource allocation.</p>
     <p><strong>Description:</strong></p>
     <ul>
-        <li><strong>Hashing:</strong> Quick lookup for companies and product IDs.</li>
+        <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/hashing.cpp">Hashing</a>
+:</strong> Quick lookup for companies and product IDs.</li>
         <li><strong>Lookup Table:</strong> Store fixed data like road names, area codes, and zones.</li>
-        <li><strong>Binary Search Tree (BST):</strong> Sort and manage companies or factories.</li>
+        <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/binary_search_tree.cpp">Binary Search Tree (BST)</a>
+:</strong> Sort and manage companies or factories.</li>
         <li><strong>Design Techniques:</strong>
             <ul>
-                <li>AVL Tree or Red-Black Tree for balancing data to optimize queries.</li>
+                <li><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/avl_tree.cpp">AVL Tree</a>
+ or Red-Black Tree for balancing data to optimize queries.</li>
                 <li>Time Efficiency: Hashing offers O(1) lookups; BST operations are O(log n).</li>
                 <li>Space Efficiency: Hashing uses O(n) space; BST uses O(n) for storing nodes.</li>
             </ul>
@@ -355,7 +357,7 @@
     <p><strong>Idea:</strong> Prioritize tasks such as repairs and deliveries in the industrial zones.</p>
     <p><strong>Description:</strong></p>
     <ul>
-        <li><strong>Min-Heap or Max-Heap:</strong> Prioritize tasks based on urgency.</li>
+        <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/heap.cpp">Min-Heap or Max-Heap (heap)</a></strong> Prioritize tasks based on urgency.</li>
         <li><strong>Design Techniques:</strong>
             <ul>
                 <li>Greedy Technique: Always process the most urgent task.</li>
@@ -369,7 +371,7 @@
     <p><strong>Idea:</strong> Dynamically manage resources shared between industrial zones.</p>
     <p><strong>Description:</strong></p>
     <ul>
-        <li><strong>Union-Find:</strong> Track and merge connected industrial zones working together on large projects.</li>
+        <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/union_find.cpp">Union-Find</a>:</strong> Track and merge connected industrial zones working together on large projects.</li>
         <li><strong>Design Techniques:</strong>
             <ul>
                 <li>Union-Find for efficient merging and tracking of connected zones.</li>
@@ -383,8 +385,8 @@
     <p><strong>Idea:</strong> Manage and track the growth of industrial zones and their resources.</p>
     <p><strong>Description:</strong></p>
     <ul>
-        <li><strong>Segment Tree:</strong> Efficiently manage and query range-based data such as energy consumption or traffic in zones.</li>
-        <li><strong>AVL Tree:</strong> Maintain a balanced record of industrial zones.</li>
+        <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/segment_tree.cpp">Segment Tree</a>:</strong> Efficiently manage and query range-based data such as energy consumption or traffic in zones.</li>
+        <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/avl_tree.cpp">AVL Tree</a>:</strong> Maintain a balanced record of industrial zones.</li>
         <li><strong>Design Techniques:</strong>
             <ul>
                 <li>AVL Tree ensures efficient insertion and querying.</li>
@@ -399,7 +401,7 @@
     <p><strong>Idea:</strong> Manage the flow of materials and goods between factories and zones.</p>
     <p><strong>Description:</strong></p>
     <ul>
-        <li><strong>Queue:</strong> Ensures that materials are processed in the correct order (FIFO).</li>
+        <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/queue.cpp">Queue</a>:</strong> Ensures that materials are processed in the correct order (FIFO).</li>
         <li><strong>Deque:</strong> A double-ended queue for more complex operations like simultaneous loading and unloading.</li>
         <li><strong>Design Techniques:</strong>
             <ul>
@@ -414,8 +416,8 @@
     <p><strong>Idea:</strong> Monitor factory performance metrics such as output, downtime, and efficiency.</p>
     <p><strong>Description:</strong></p>
     <ul>
-        <li><strong>Fenwick Tree:</strong> Efficiently track cumulative metrics like total output or downtime.</li>
-        <li><strong>Sparse Table:</strong> Efficiently query static data over large datasets.</li>
+        <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/fenwick.cpp">Fenwick Tree</a>:</strong> Efficiently track cumulative metrics like total output or downtime.</li>
+        <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/sparse_table.cpp">Sparse Table</a>:</strong> Efficiently query static data over large datasets.</li>
         <li><strong>Design Techniques:</strong>
             <ul>
                 <li>Fenwick Tree is ideal for range updates and queries.</li>
@@ -430,8 +432,8 @@
     <p><strong>Idea:</strong> Manage dynamic operations like shifts, roles, and equipment checks.</p>
     <p><strong>Description:</strong></p>
     <ul>
-        <li><strong>List:</strong> Store and manage employee data such as roles, shifts, and salaries.</li>
-        <li><strong>Stack:</strong> Manage reversible operations such as equipment checks.</li>
+        <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/list.cpp">List</a>:</strong> Store and manage employee data such as roles, shifts, and salaries.</li>
+        <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/stack.cpp">Stack</a>:</strong> Manage reversible operations such as equipment checks.</li>
         <li><strong>Design Techniques:</strong>
             <ul>
                 <li>Lazy Propagation: Only update employee data when necessary.</li>
@@ -450,7 +452,9 @@
         <li><strong>Design Techniques:</strong>
             <ul>
                 <li>Brute Force can be computationally expensive but exhaustive.</li>
-                <li>Sorting Algorithms (e.g., Merge Sort or Quick Sort) help organize data efficiently.</li>
+                <li>Sorting Algorithms (e.g., <a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/quick_sort.cpp">Quick sort</a> or 
+<a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/merge_sort.cpp">Merge sort</a>
+) help organize data efficiently.</li>
                 <li>Time Efficiency: Sorting operations take O(n log n).</li>
                 <li>Space Efficiency: Sorting algorithms require O(n) space.</li>
             </ul>
@@ -461,8 +465,8 @@
     <p><strong>Idea:</strong> Optimize traffic flow and routing between industrial zones.</p>
     <p><strong>Description:</strong></p>
     <ul>
-        <li><strong>BFS:</strong> Use Breadth-First Search to compute the shortest path between zones, considering traffic congestion.</li>
-        <li><strong>DFS:</strong> Use Depth-First Search to explore all potential routes, ensuring redundancy and alternative routes.</li>
+        <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/bfs.cpp">BFS</a>:</strong> Use Breadth-First Search to compute the shortest path between zones, considering traffic congestion.</li>
+        <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/dfs.cpp">DFS</a>:</strong> Use Depth-First Search to explore all potential routes, ensuring redundancy and alternative routes.</li>
         <li><strong>Design Techniques:</strong>
             <ul>
                 <li>Lazy Propagation: Only compute new routes when necessary.</li>
@@ -482,7 +486,7 @@
 <p><strong>Idea:</strong> Efficient management of patient records for fast access, updates, and deletions.</p>
 <p><strong>Description:</strong></p>
 <ul>
-    <li><strong>Binary Search Tree (BST) and AVL Tree:</strong> Used to store patient records (sorted by patient ID or name), allowing for quick lookups, insertions, and deletions.</li>
+    <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/binary_search_tree.cpp">Binary Search Tree (BST)</a> and <a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/avl_tree.cpp">AVL Tree</a>:</strong> Used to store patient records (sorted by patient ID or name), allowing for quick lookups, insertions, and deletions.</li>
     <li><strong>Design Techniques:</strong>
         <ul>
             <li>Divide and Conquer: Divide the search and update operations into subtrees, which are smaller and easier to manage.</li>
@@ -497,7 +501,7 @@
 <p><strong>Idea:</strong> Prioritize critical patients for emergency treatment.</p>
 <p><strong>Description:</strong></p>
 <ul>
-    <li><strong>Priority Queue (using a Heap):</strong> Prioritizes patients based on the severity of their condition.</li>
+    <li><strong>Priority Queue (using a <a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/heap.cpp">Heap</a>):</strong> Prioritizes patients based on the severity of their condition.</li>
     <li><strong>Design Techniques:</strong>
         <ul>
             <li>Greedy Technique: Always choose the most urgent case in each iteration.</li>
@@ -511,10 +515,10 @@
 <p><strong>Idea:</strong> Allocate resources efficiently by modeling healthcare facilities as a graph.</p>
 <p><strong>Description:</strong></p>
 <ul>
-    <li><strong>Graph Representation:</strong> Nodes represent hospitals and resources; edges represent the availability of connections or resources.</li>
+    <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/graph.cpp">Graph</a> Representation:</strong> Nodes represent hospitals and resources; edges represent the availability of connections or resources.</li>
     <li><strong>Design Techniques:</strong>
         <ul>
-            <li>Dynamic Programming: Use Dijkstra’s algorithm to find the optimal path between hospitals and resource centers.</li>
+            <li>Dynamic Programming: Use <a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/dijkstra.cpp">Dijkstra’s Algorithm</a> to find the optimal path between hospitals and resource centers.</li>
             <li>Time Efficiency: Dijkstra’s algorithm has a time complexity of O(E log V) with a priority queue.</li>
             <li>Space Efficiency: The space complexity is O(V + E) as it stores the graph and calculates the shortest paths.</li>
         </ul>
@@ -525,8 +529,8 @@
 <p><strong>Idea:</strong> Manage and organize patient appointments efficiently.</p>
 <p><strong>Description:</strong></p>
 <ul>
-    <li><strong>Queue:</strong> Patients are processed in the order of their appointment (FIFO).</li>
-    <li><strong>Linked List:</strong> For dynamic appointment scheduling where times can be adjusted or rescheduled.</li>
+    <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/queue.cpp">Queue</a>:</strong> Patients are processed in the order of their appointment (FIFO).</li>
+    <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/list.cpp">List</a>:</strong> For dynamic appointment scheduling where times can be adjusted or rescheduled.</li>
     <li><strong>Design Techniques:</strong>
         <ul>
             <li>Lazy Propagation: Only update appointment statuses when necessary (e.g., after confirmation).</li>
@@ -540,7 +544,7 @@
 <p><strong>Idea:</strong> Maintain drug inventory and ensure availability when needed.</p>
 <p><strong>Description:</strong></p>
 <ul>
-    <li><strong>Hashing:</strong> Use hash tables for efficient storage and retrieval of drug information.</li>
+    <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/hashing.cpp">Hashing</a>:</strong> Use hash tables for efficient storage and retrieval of drug information.</li>
     <li><strong>Lookup Table:</strong> A simple table to store drug details that do not change frequently (like names, dosages, and prices).</li>
     <li><strong>Design Techniques:</strong>
         <ul>
@@ -555,9 +559,9 @@
 <p><strong>Idea:</strong> Implement a fast search system for patient data.</p>
 <p><strong>Description:</strong></p>
 <ul>
-    <li><strong>Trie:</strong> Used for searching patient names or medical conditions based on prefixes.</li>
-    <li><strong>Hashing:</strong> Enables quick lookup of patient records by their unique IDs.</li>
-    <li><strong>Knuth-Morris-Pratt Algorithm (KMP):</strong> A string-matching algorithm that enables efficient substring search within patient records, such as medical conditions or diagnoses.</li>
+    <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/trie.cpp">Trie</a>:</strong> Used for searching patient names or medical conditions based on prefixes.</li>
+    <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/hashing.cpp">Hashing</a>:</strong> Enables quick lookup of patient records by their unique IDs.</li>
+    <li><strong>Knuth-Morris-Pratt Algorithm<a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/kmp.cpp">(KMP)</a>:</strong> A string-matching algorithm that enables efficient substring search within patient records, such as medical conditions or diagnoses.</li>
     <li><strong>Design Techniques:</strong>
         <ul>
             <li>Pre-Computing: Precompute and store frequent search queries for fast access.</li>
@@ -583,7 +587,7 @@
 <p><strong>Idea:</strong> Track the connectedness of healthcare facilities in the city.</p>
 <p><strong>Description:</strong></p>
 <ul>
-    <li><strong>Union-Find:</strong> Efficiently manage and merge healthcare facilities (hospitals, clinics) as new ones are added to the network.</li>
+    <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/union_find.cpp">Union-Find</a>:</strong> Efficiently manage and merge healthcare facilities (hospitals, clinics) as new ones are added to the network.</li>
     <li><strong>Design Techniques:</strong>
         <ul>
             <li>Union-Find is efficient for managing connected components of healthcare facilities.</li>
@@ -597,7 +601,7 @@
 <p><strong>Idea:</strong> Track room or bed availability in real-time across hospitals.</p>
 <p><strong>Description:</strong></p>
 <ul>
-    <li><strong>Segment Tree:</strong> Allows efficient range queries and updates, useful for tracking room availability over time.</li>
+    <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/segment_tree.cpp">Segment Tree</a>:</strong> Allows efficient range queries and updates, useful for tracking room availability over time.</li>
     <li><strong>Design Techniques:</strong>
         <ul>
             <li>Dynamic Programming: Used to update room availability dynamically.</li>
@@ -611,7 +615,7 @@
 <p><strong>Idea:</strong> Generate quick reports on healthcare metrics such as patient visits or treatment data.</p>
 <p><strong>Description:</strong></p>
 <ul>
-    <li><strong>Fenwick Tree:</strong> Efficiently handles cumulative frequency queries, which is useful for tracking healthcare data over time.</li>
+    <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/fenwick.cpp">Fenwick Tree</a>:</strong> Efficiently handles cumulative frequency queries, which is useful for tracking healthcare data over time.</li>
     <li><strong>Design Techniques:</strong>
         <ul>
             <li>Pre-Computing: Precompute cumulative data for fast reporting.</li>
@@ -625,7 +629,7 @@
 <p><strong>Idea:</strong> Keep a stack of recent treatments or medical records for each patient.</p>
 <p><strong>Description:</strong></p>
 <ul>
-    <li><strong>Stack:</strong> Track the most recent treatments or records, with the ability to revert to a previous state if necessary.</li>
+    <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/stack.cpp">Stack</a>:</strong> Track the most recent treatments or records, with the ability to revert to a previous state if necessary.</li>
     <li><strong>Pattern Recognition:</strong> Repeated actions of adding and removing records in LIFO order.</li>
     <li><strong>Design Techniques:</strong>
         <ul>
@@ -645,10 +649,10 @@
 <p><strong>Idea:</strong> Model the education network (schools, colleges, research institutions) as a graph to optimize communication and resource allocation.</p>
 <p><strong>Description:</strong></p>
 <ul>
-    <li><strong>Graph Representation:</strong> Nodes represent educational institutions; edges represent pathways or communication networks.</li>
+    <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/graph.cpp">Graph</a> Representation:</strong> Nodes represent educational institutions; edges represent pathways or communication networks.</li>
     <li><strong>Design Techniques:</strong>
         <ul>
-            <li>Dijkstra’s Algorithm or A* Search for optimizing travel paths between institutions.</li>
+            <li><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/dijkstra.cpp">Dijkstra’s Algorithm</a> for optimizing travel paths between institutions.</li>
             <li>Time Efficiency: Dijkstra’s algorithm runs in O(E log V).</li>
             <li>Space Efficiency: Space complexity is O(V + E).</li>
         </ul>
@@ -659,12 +663,12 @@
 <p><strong>Idea:</strong> Efficiently manage e-learning resources and platform data such as course catalogs, student data, and faculty information.</p>
 <p><strong>Description:</strong></p>
 <ul>
-    <li><strong>Hashing:</strong> Use hash tables for fast access to student records, course data, and faculty information.</li>
+    <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/hashing.cpp">Hashing</a>:</strong> Use hash tables for fast access to student records, course data, and faculty information.</li>
     <li><strong>Lookup Tables:</strong> Store fixed data such as course prerequisites, student enrollment status, or faculty availability.</li>
-    <li><strong>Binary Search Tree (BST):</strong> Maintain an ordered list of students, courses, or faculty members.</li>
+    <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/binary_search_tree.cpp">Binary Search Tree (BST)</a>:</strong> Maintain an ordered list of students, courses, or faculty members.</li>
     <li><strong>Design Techniques:</strong>
         <ul>
-            <li>AVL Tree or Red-Black Tree for maintaining sorted data for efficient searching.</li>
+            <li><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/avl_tree.cpp">AVL Tree</a> or Red-Black Tree for maintaining sorted data for efficient searching.</li>
             <li>Time Efficiency: Hashing offers O(1) lookup, while BST operations take O(log n).</li>
             <li>Space Efficiency: Hash tables use O(n), while BSTs use O(n).</li>
         </ul>
@@ -675,7 +679,7 @@
 <p><strong>Idea:</strong> Prioritize student enrollments based on available seats, course preferences, or admission scores.</p>
 <p><strong>Description:</strong></p>
 <ul>
-    <li><strong>Min-Heap or Max-Heap:</strong> Prioritize students for course enrollment based on score, preference, or availability.</li>
+    <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/heap.cpp">Heap</a>:</strong> Prioritize students for course enrollment based on score, preference, or availability.</li>
     <li><strong>Design Techniques:</strong>
         <ul>
             <li>Greedy Technique: Always enroll the highest-priority student available.</li>
@@ -689,7 +693,7 @@
 <p><strong>Idea:</strong> Optimize classroom scheduling and resource allocation across different institutions.</p>
 <p><strong>Description:</strong></p>
 <ul>
-    <li><strong>Segment Tree:</strong> Use for managing time slots and available classrooms across multiple institutions.</li>
+    <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/segment_tree.cpp">Segment Tree</a>:</strong> Use for managing time slots and available classrooms across multiple institutions.</li>
     <li><strong>Interval Tree:</strong> Efficiently manage classroom availability and prevent conflicts during scheduling.</li>
     <li><strong>Design Techniques:</strong>
         <ul>
@@ -705,8 +709,8 @@
 <p><strong>Idea:</strong> Manage dynamic data about students, faculty, and staff, including shifts, roles, and activities.</p>
 <p><strong>Description:</strong></p>
 <ul>
-    <li><strong>Linked List:</strong> Use for dynamically managing student or faculty details, where data might change frequently (e.g., grades, shifts).</li>
-    <li><strong>Binary Search Tree (BST):</strong> Organize students or faculty members based on specific attributes like GPA or department.</li>
+    <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/list.cpp">List</a>:</strong> Use for dynamically managing student or faculty details, where data might change frequently (e.g., grades, shifts).</li>
+    <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/binary_search_tree.cpp">Binary Search Tree (BST)</a>:</strong> Organize students or faculty members based on specific attributes like GPA or department.</li>
     <li><strong>Design Techniques:</strong>
         <ul>
             <li>Lazy Propagation: Update records only when necessary, especially in large institutions.</li>
@@ -720,7 +724,7 @@
 <p><strong>Idea:</strong> Manage the flow of students during online examinations, ensuring efficient exam scheduling and result processing.</p>
 <p><strong>Description:</strong></p>
 <ul>
-    <li><strong>Queue:</strong> Manage students waiting for exam entry, ensuring fair processing in a First-In-First-Out (FIFO) manner.</li>
+    <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/queue.cpp">Queue</a>:</strong> Manage students waiting for exam entry, ensuring fair processing in a First-In-First-Out (FIFO) manner.</li>
     <li><strong>Deque:</strong> A double-ended queue can manage students entering or leaving the exam in different phases.</li>
     <li><strong>Design Techniques:</strong>
         <ul>
@@ -735,8 +739,8 @@
 <p><strong>Idea:</strong> Track and analyze performance data such as exam scores, attendance, and project submissions.</p>
 <p><strong>Description:</strong></p>
 <ul>
-    <li><strong>Fenwick Tree:</strong> Track cumulative performance metrics such as total grades or attendance.</li>
-    <li><strong>Sparse Table:</strong> Efficiently query performance data across large datasets for static queries like overall exam performance.</li>
+    <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/fenwick.cpp">Fenwick Tree</a>:</strong> Track cumulative performance metrics such as total grades or attendance.</li>
+    <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/sparse_table.cpp">Sparse Table</a>:</strong> Efficiently query performance data across large datasets for static queries like overall exam performance.</li>
     <li><strong>Design Techniques:</strong>
         <ul>
             <li>Fenwick Tree helps with cumulative performance tracking.</li>
@@ -751,7 +755,7 @@
 <p><strong>Idea:</strong> Manage scholarships by prioritizing students based on merit, need, and other factors.</p>
 <p><strong>Description:</strong></p>
 <ul>
-    <li><strong>Min-Heap or Max-Heap:</strong> Use a heap to prioritize students for scholarships based on their scores or financial need.</li>
+    <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/heap.cpp">Heap</a>:</strong> Use a heap to prioritize students for scholarships based on their scores or financial need.</li>
     <li><strong>Design Techniques:</strong>
         <ul>
             <li>Greedy Technique: Allocate scholarships to the most eligible students based on priority.</li>
@@ -765,7 +769,7 @@
 <p><strong>Idea:</strong> Recommend courses to students based on their past choices, interests, and academic performance.</p>
 <p><strong>Description:</strong></p>
 <ul>
-    <li><strong>Graph:</strong> Represent course prerequisites and student interests as a graph to recommend the next best course.</li>
+    <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/graph.cpp">Graph</a>:</strong> Represent course prerequisites and student interests as a graph to recommend the next best course.</li>
     <li><strong>Dynamic Programming:</strong> Use dynamic programming to find the optimal course selection based on prior selections and student preferences.</li>
     <li><strong>Design Techniques:</strong>
         <ul>
@@ -780,8 +784,8 @@
 <p><strong>Idea:</strong> Manage virtual labs and simulations where students can conduct experiments in an online environment.</p>
 <p><strong>Description:</strong></p>
 <ul>
-    <li><strong>Queue/Deque:</strong> Manage the queue of students awaiting access to virtual labs or simulations.</li>
-    <li><strong>Graph:</strong> Model the experiments as a graph to track various steps in a virtual experiment.</li>
+    <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/queue.cpp">Queue</a>/Deque:</strong> Manage the queue of students awaiting access to virtual labs or simulations.</li>
+    <li><strong><a href="https://github.com/01fe23bcs128/aditii_portfolio/blob/main/codes/graph.cpp">Graph</a>:</strong> Model the experiments as a graph to track various steps in a virtual experiment.</li>
     <li><strong>Design Techniques:</strong>
         <ul>
             <li>Lazy Propagation: Only update when the student enters or finishes an experiment.</li>
