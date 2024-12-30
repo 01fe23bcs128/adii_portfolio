@@ -1,3 +1,601 @@
+/* General Body Styling */
+body {
+    background-color: #282a36;
+    color: #f8f8f2;
+    font-family: 'Merriweather', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #44475a;
+    border-bottom: 2px solid #bd93f9;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Header Title */
+header h1 {
+    color: #f8f8f2;
+    font-size: 24px;
+}
+
+/* Navigation Styling with Cool Effects */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    background: linear-gradient(90deg, #44475a, #6272a4);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li {
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+nav ul li a {
+    color: #8be9fd;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ff79c6;
+    color: #282a36;
+}
+
+/* Active Link Styling */
+nav ul li a.active {
+    background-color: #bd93f9;
+    color: #282a36;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Home Section Styling */
+#home {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #44475a, #282a36);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 1200px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#home:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+#home h2 {
+    color: #f8f8f2;
+    font-size: 42px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#home p {
+    color: #d6d6d6;
+    font-size: 20px;
+    line-height: 1.8;
+    margin: 20px auto;
+    width: 75%;
+    transition: color 0.3s ease;
+}
+
+#home p:hover {
+    color: #8be9fd;
+}
+
+#home ul {
+    list-style: none;
+    margin: 30px auto;
+    padding: 0;
+    width: 85%;
+    text-align: left;
+}
+
+#home ul li {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #f8f8f2;
+    background: linear-gradient(90deg, #6272a4, #44475a);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#home ul li:hover {
+    background: #ff79c6;
+    color: #282a36;
+    transform: translateX(15px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Header Boxes Styling */
+.header-box {
+    margin: 30px auto;
+    padding: 30px;
+    background: #44475a;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.header-box:hover {
+    transform: scale(1.05);
+    background-color: #6272a4;
+}
+
+.header-box h1 {
+    color: #bd93f9;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header-box p {
+    color: #d6d6d6;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.header-box ul li {
+    background: linear-gradient(90deg, #6272a4, #44475a);
+    padding: 12px;
+    border-radius: 6px;
+    color: #f8f8f2;
+    transition: all 0.3s ease;
+}
+
+.header-box ul li:hover {
+    background: #50fa7b;
+    color: #282a36;
+    transform: translateX(10px);
+}
+
+/* Section Styling */
+#business-cases {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    background: linear-gradient(135deg, #44475a, #282a36);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#business-cases h2 {
+    text-align: center;
+    font-size: 34px;
+    color: #bd93f9;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Case Box Styling */
+.case {
+    margin-bottom: 40px;
+    padding: 20px 30px;
+    background: #44475a;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    border-left: 6px solid #888;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.case:hover {
+    background-color: #6272a4;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Industrial Expansion */
+.case:nth-child(1) {
+    border-left-color: #ff79c6;
+}
+
+.case:nth-child(1) h3 {
+    color: #ff79c6;
+}
+
+.case:nth-child(1) ul li {
+    background: rgba(255, 121, 198, 0.1);
+    border-left: 4px solid #ff79c6;
+}
+
+.case:nth-child(1) ul li:hover {
+    background: #ff79c6;
+    color: #282a36;
+}
+
+/* Healthcare Infrastructure */
+.case:nth-child(2) {
+    border-left-color: #50fa7b;
+}
+
+.case:nth-child(2) h3 {
+    color: #50fa7b;
+}
+
+.case:nth-child(2) ul li {
+    background: rgba(80, 250, 123, 0.1);
+    border-left: 4px solid #50fa7b;
+}
+
+.case:nth-child(2) ul li:hover {
+    background: #50fa7b;
+    color: #282a36;
+}
+
+/* Education Hub */
+.case:nth-child(3) {
+    border-left-color: #8be9fd;
+}
+
+.case:nth-child(3) h3 {
+    color: #8be9fd;
+}
+
+.case:nth-child(3) ul li {
+    background: rgba(139, 233, 253, 0.1);
+    border-left: 4px solid #8be9fd;
+}
+
+.case:nth-child(3) ul li:hover {
+    background: #8be9fd;
+    color: #282a36;
+}
+
+/* Shared Styles */
+.case h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.case h4 {
+    font-size: 22px;
+    color: #f8f8f2;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.case p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #d6d6d6;
+    margin-bottom: 20px;
+}
+
+.case ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.case ul li {
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    transition: background 0.3s ease, color 0.3s ease;
+    font-size: 17px;
+    color: #f8f8f2;
+}
+
+
+/* General Section Styling */
+#course-reflections {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    background: linear-gradient(135deg, #44475a, #282a36);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#course-reflections h2 {
+    text-align: center;
+    font-size: 34px;
+    color: #bd93f9;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Titles Styling */
+#course-reflections h3 {
+    color: #f8f8f2;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#course-reflections h3:hover {
+    color: #ff79c6;
+    transform: translateX(10px);
+}
+
+/* Subsection Titles Styling */
+#course-reflections h4 {
+    color: #f8f8f2;
+    font-size: 22px;
+    margin-top: 20px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#course-reflections h4:hover {
+    color: #ff79c6;
+    transform: translateX(10px);
+}
+
+/* Paragraph Styling */
+#course-reflections p {
+    font-size: 18px;
+    color: #d6d6d6;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* List Styling */
+#course-reflections ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#course-reflections ul li {
+    background: linear-gradient(90deg, #6272a4, #44475a);
+    color: #f8f8f2;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+
+#course-reflections ul li:hover {
+    background: #ff79c6;
+    color: #282a36;
+    transform: translateX(10px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover Effect for Course Section */
+#course-reflections:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* SDG Mapping Section */
+#sdg-mapping {
+    background-color: #282a36;
+    color: #f8f8f2;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+#sdg-mapping h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff79c6;
+}
+
+.business-case {
+    background-color: #44475a;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.business-case h3 {
+    font-size: 2rem;
+    color: #50fa7b;
+    margin-bottom: 15px;
+}
+
+.business-case h4 {
+    font-size: 1.5rem;
+    color: #8be9fd;
+    margin-top: 15px;
+}
+
+.business-case p {
+    font-size: 1.1rem;
+    color: #f8f8f2;
+    line-height: 1.6;
+}
+
+.business-case:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.summary {
+    background-color: #44475a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.summary h3 {
+    font-size: 2rem;
+    color: #ff79c6;
+    margin-bottom: 15px;
+}
+
+.summary ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.summary ul li {
+    font-size: 1.1rem;
+    color: #f8f8f2;
+    margin-bottom: 10px;
+}
+
+.summary p {
+    font-size: 1.1rem;
+    color: #f8f8f2;
+    line-height: 1.6;
+}
+
+.summary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover Effects for Links */
+#sdg-mapping a {
+    color: #50fa7b;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#sdg-mapping a:hover {
+    color: #ff79c6;
+}
+
+
+/* Global Styles */
+body {
+    background-color: #282a36; /* Dark grayish blue background */
+    color: #f8f8f2; /* Light off-white text color */
+    font-family: 'Arial', sans-serif;
+}
+
+h1, h2 {
+    color: #f8f8f2; /* Light off-white text color for headers */
+}
+
+/* Section Styles */
+.section {
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #44475a; /* Dark muted purple background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+    background-color: #4b5d6c; /* Darker blue-gray on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #6a9f68; /* Muted green for sub-headers */
+}
+
+/* Paragraph & List Styles */
+p {
+    line-height: 1.6;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+/* List Item Hover Effect (only background hover) */
+ul li:hover {
+    background-color: #3e5062; /* Darker shade of blue-gray */
+    cursor: pointer;
+    padding: 10px;
+    transform: scale(1.05);
+}
+
+/* Border Styling */
+hr {
+    border: 1px solid #4b5d6c; /* Darker blue-gray border */
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/* Interactive Design Elements */
+ul li ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: disc;
+    color: #ff79c6; /* Light pink color for nested lists */
+}
+
+ul li ul li {
+    font-size: 1rem;
+    color: #f8f8f2; /* Light off-white text color for nested items */
+}
+
+/* Transitions */
+ul li, h1, h2 {
+    transition: color 0.3s ease;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +607,7 @@
         body {
             background-color: #282a36;
             color: #f8f8f2;
-            font-family: 'Merriweather', sans-serif;
+            font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             padding: 20px;
         }
