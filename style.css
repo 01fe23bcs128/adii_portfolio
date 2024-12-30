@@ -496,13 +496,13 @@ nav ul li a.active {
 
 /* Global Styles */
 body {
-    background-color: #282a36;
-    color: #f8f8f2;
+    background-color: #282a36; /* Dark grayish blue background */
+    color: #f8f8f2; /* Light off-white text color */
     font-family: 'Arial', sans-serif;
 }
 
 h1, h2 {
-    color: #f8f8f2;
+    color: #f8f8f2; /* Light off-white text color for headers */
 }
 
 /* Section Styles */
@@ -510,13 +510,13 @@ h1, h2 {
     padding: 30px;
     margin: 20px;
     border-radius: 10px;
-    background-color: #44475a;
+    background-color: #44475a; /* Dark muted purple background */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .section:hover {
-    background-color: #6272a4;
+    background-color: #4b5d6c; /* Darker blue-gray on hover */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -529,7 +529,7 @@ h1 {
 h2 {
     font-size: 1.5rem;
     margin-top: 20px;
-    color: #a8e063; /* Aesthetic muted green */
+    color: #6a9f68; /* Muted green for sub-headers */
 }
 
 /* Paragraph & List Styles */
@@ -548,9 +548,9 @@ li {
     transition: all 0.3s ease;
 }
 
+/* List Item Hover Effect (only background hover) */
 ul li:hover {
-    background-color: #5d8c9f; /* Darker shade of blue */
-    color: #282a36;
+    background-color: #3e5062; /* Darker shade of blue-gray */
     cursor: pointer;
     padding: 10px;
     transform: scale(1.05);
@@ -558,7 +558,7 @@ ul li:hover {
 
 /* Border Styling */
 hr {
-    border: 1px solid #6272a4;
+    border: 1px solid #4b5d6c; /* Darker blue-gray border */
     margin-top: 15px;
     margin-bottom: 20px;
 }
@@ -568,12 +568,12 @@ ul li ul {
     margin-top: 10px;
     padding-left: 20px;
     list-style-type: disc;
-    color: #ff79c6;
+    color: #ff79c6; /* Light pink color for nested lists */
 }
 
 ul li ul li {
     font-size: 1rem;
-    color: #f8f8f2;
+    color: #f8f8f2; /* Light off-white text color for nested items */
 }
 
 /* Transitions */
