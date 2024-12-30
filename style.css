@@ -595,3 +595,807 @@ ul li, h1, h2 {
         font-size: 1.2rem;
     }
 }
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chitranagari: Smart City Design</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #282a36;
+            color: #f8f8f2;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #f8f8f2;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        .highlight {
+            font-size: 50px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chitranagari: Smart City Design</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('business-cases')">Business Cases</a></li>
+                <li><a href="#" onclick="showSection('course-reflections')">Course Reflections</a></li>
+                <li><a href="#" onclick="showSection('sdg-mapping')">SDG Mapping</a></li>
+                <li><a href="#" onclick="showSection('implementation')">Implementation</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <!-- Home Section -->
+<div id="home" class="section active">
+    <h2>Welcome to the Design and Analysis of Algorithms (DAA) Project</h2>
+    <p>This project combines Data Structures and Algorithms (DAA) with real-world challenges, crafting innovative solutions for Chitranagari’s development. Dive in and see how algorithms drive progress in healthcare, education, and industry.</p>
+    
+    <!-- Explore Our Journey Section -->
+    <div class="header-box">
+        <h1>Explore Our Journey</h1>
+        <p>Business Cases 🌍</p>
+        <ul>
+            <li><strong>Healthcare Revolution 🏥:</strong> Optimize patient-hospital assignment with graph algorithms and prioritize resources with heaps.</li>
+            <li><strong>Smart Classrooms 🎓:</strong> Simplify scheduling conflicts with Segment and Interval Trees.</li>
+            <li><strong>Industrial Growth 🏭:</strong> Boost efficiency in logistics and resource distribution using shortest path and flow algorithms.</li>
+        </ul>
+    </div>
+
+    <!-- Course Reflections Section -->
+    <div class="header-box">
+        <h1>Course Reflections 🧠</h1>
+        <p>From nature-inspired recursion to efficient tree structures, we explored algorithms that optimize speed and memory. Array queries, sorting, and searching sharpened our problem-solving skills, while design principles like Divide and Conquer showed us the beauty of breaking big problems into manageable steps.</p>
+    </div>
+
+    <!-- SDG Mapping Section -->
+    <div class="header-box">
+        <h1>SDG Mapping 🌱</h1>
+        <p>Our efforts align with SDG 11 (Sustainable Cities and Communities) by:</p>
+        <ul>
+            <li><strong>Strengthening healthcare systems</strong> with smarter logistics.</li>
+            <li><strong>Enhancing educational infrastructure</strong> through resource optimization.</li>
+            <li><strong>Boosting industrial efficiency</strong> for sustainable urban growth.</li>
+        </ul>
+    </div>
+
+    <!-- Implementation Section -->
+    <div class="header-box">
+        <h1>Implementation 🔧</h1>
+        <p>Where the magic happens:</p>
+        <ul>
+            <li><strong>Algorithms in Action:</strong> From Dijkstra’s and Bellman-Ford to Fenwick Trees and Priority Queues.</li>
+            <li><strong>Real-World Problems:</strong> Algorithms meet reality in healthcare, education, and industry.</li>
+            <li><strong>Optimization in Every Step:</strong> Achieving efficiency in time and space while solving complex challenges.</li>
+        </ul>
+    </div>
+</div>
+
+
+
+<!-- Business Cases Section -->
+<div id="business-cases" class="section">
+    <h2>Business Cases Identified by Aditi Choudhary (01FE23BCS128)</h2>
+
+    <!-- Industrial Expansion -->
+    <div class="case">
+        <h3>1. Industrial Expansion 🏭</h3>
+        <p>
+            Chitranagari is poised for an industrial revolution! Our mission? To establish the city as an industrial powerhouse with state-of-the-art infrastructure and sustainable development practices. The city will host vibrant industrial zones, catering to small, medium, and large-scale industries. Think modern road networks, uninterrupted power supply, and smart waste management—everything needed for industries to thrive.
+        </p>
+        <h4>Why is this important?</h4>
+        <ul>
+            <li>Attract both domestic and international investments, creating an abundance of job opportunities for the people of Chitranagari.</li>
+            <li>Generate revenue from these industries, fueling the city's growth and development in every corner.</li>
+        </ul>
+        <p>
+            But we’re not just focused on growth at any cost. Chitranagari will be a pioneer in green manufacturing. With carbon-neutral goals and sustainable practices embedded in every factory, we ensure that our industrial ambitions don’t come at the planet’s expense.
+        </p>
+    </div>
+
+    <!-- Healthcare Infrastructure -->
+    <div class="case">
+        <h3>2. Healthcare Infrastructure 🏥</h3>
+        <p>
+            What’s a smart city without a healthier, happier population? Chitranagari is committed to building a robust healthcare ecosystem that integrates the latest in technology and provides accessible, top-notch care for everyone. The plan includes multi-specialty hospitals, community health centers, and digital health services for convenient remote consultations.
+        </p>
+        <h4>Here’s the game plan:</h4>
+        <ul>
+            <li>Integrate AI and IoT into healthcare systems to make services more efficient and accessible.</li>
+            <li>Focus on preventive healthcare, offering fitness zones, parks, and wellness programs to keep citizens healthy before they even need a doctor.</li>
+        </ul>
+        <p>
+            But that’s not all! Chitranagari will have an all-encompassing public health monitoring system and a centralized emergency response to ensure we’re always prepared, no matter the crisis. The goal? To make sure every resident has access to care—whether at home or in the hospital.
+        </p>
+    </div>
+
+    <!-- Education Hub -->
+    <div class="case">
+        <h3>3. Education Hub 🎓</h3>
+        <p>
+            Chitranagari is on its way to becoming the education capital of the region! Our vision is clear: build a smart, future-ready educational ecosystem with top-tier schools, colleges, and research institutions. This will be a place where learning never stops, powered by e-learning platforms, virtual labs, and interactive classrooms.
+        </p>
+        <h4>What makes this different?</h4>
+        <ul>
+            <li>Beyond the basics, we’re focusing on skill development and vocational training to ensure students are equipped for future industries.</li>
+            <li>Partnering with global universities will bring world-class innovation and knowledge exchange right to Chitranagari.</li>
+        </ul>
+        <p>
+            And we’re serious about inclusivity! With scholarships and affordable education programs, we’re ensuring that all Chitranagari residents—regardless of their background—get the opportunity to succeed.
+        </p>
+    </div>
+</div>
+
+
+<!-- Course Reflections Section -->
+<div id="course-reflections" class="section">
+    <h2>Course Learning Outcomes</h2>
+
+    <h3>1. What are the kinds of problems we see in nature?</h3>
+    <p>Nature provides numerous examples of problem-solving approaches:</p>
+    <ul>
+        <li><strong>Iteration:</strong> Tides rise and fall in a regular, repeated pattern.</li>
+        <li><strong>Recursion:</strong> A cauliflower looks identical at every level, from stem to tip.</li>
+        <li><strong>Backtracking:</strong> Solving a maze by retracing steps when hitting a dead end.</li>
+    </ul>
+    <p>These natural patterns inspire solutions to similar problems in algorithm design.</p>
+
+    <h3>2. What is space and time efficiency? Why are they important?</h3>
+    <p><strong>Time efficiency:</strong> Measures how fast an algorithm performs.</p>
+    <p><strong>Space efficiency:</strong> Measures how much additional memory it requires.</p>
+    <p>If an algorithm is slow or consumes excessive memory, it becomes impractical for large-scale problems.</p>
+
+    <h4>Types of Growth in Algorithms:</h4>
+    <ul>
+        <li><strong>Constant time (O(1)):</strong> Performance remains the same regardless of input size.</li>
+        <li><strong>Logarithmic time (O(log n)):</strong> Slows slightly as input grows.</li>
+        <li><strong>Linear time (O(n)):</strong> Performance slows proportionally with input size.</li>
+        <li><strong>Linearithmic time (O(n log n)):</strong> Slower than linear, but manageable.</li>
+        <li><strong>Quadratic time (O(n²)):</strong> Becomes significantly slower with larger inputs.</li>
+        <li><strong>Cubic time (O(n³)):</strong> Even slower than quadratic.</li>
+        <li><strong>Exponential (O(2ⁿ)) and Factorial (O(n!)):</strong> Infeasible for large inputs.</li>
+    </ul>
+
+    <h3>3. What are the takeaways from different design principles?</h3>
+    <p>Effective problem-solving relies on various design principles:</p>
+    <ul>
+        <li><strong>Divide and Conquer:</strong> Break a problem into smaller parts, solve them individually, and combine results.</li>
+        <li><strong>Dynamic Programming:</strong> Store solutions to subproblems to avoid redundant calculations.</li>
+        <li><strong>Greedy Algorithms:</strong> Choose the optimal solution at each step.</li>
+        <li><strong>Backtracking:</strong> Explore all possibilities and revert incorrect decisions.</li>
+    </ul>
+    <p>These principles improve algorithm performance and simplify complex problems.</p>
+
+    <h3>4. How do tree data structures solve problems?</h3>
+    <p>Trees provide an organized way to store hierarchical data:</p>
+    <ul>
+        <li><strong>Binary Search Tree (BST):</strong> Efficient for searching sorted data but may become unbalanced.</li>
+        <li><strong>AVL Tree:</strong> A self-balancing BST for optimal performance.</li>
+        <li><strong>2-3 Tree:</strong> Handles dynamic data effectively.</li>
+        <li><strong>Red-Black Tree:</strong> A balanced tree with fewer rebalancing operations.</li>
+        <li><strong>Heap:</strong> Quickly finds the largest or smallest value.</li>
+        <li><strong>Trie:</strong> Ideal for searching words or prefixes.</li>
+    </ul>
+
+    <h3>5. Why do we need array query algorithms?</h3>
+    <p>Array query algorithms enhance efficiency in answering range-based questions (e.g., finding the sum or maximum).</p>
+    <ul>
+        <li><strong>Prefix Sums:</strong> Quickly calculate sums over any range.</li>
+        <li><strong>Segment Trees and Fenwick Trees:</strong> Enable fast updates and queries.</li>
+    </ul>
+    <p>Applications include gaming, financial systems, and databases.</p>
+
+    <h3>6. What is the difference between trees and graphs?</h3>
+    <p><strong>Trees:</strong></p>
+    <ul>
+        <li><strong>Structure:</strong> A strict hierarchy with no loops (e.g., family trees).</li>
+        <li><strong>Traversals:</strong> Preorder, Inorder, and Postorder for hierarchical analysis.</li>
+        <li><strong>Applications:</strong> File organization, decision-making systems.</li>
+    </ul>
+    <p><strong>Graphs:</strong></p>
+    <ul>
+        <li><strong>Structure:</strong> A collection of nodes and edges, allowing loops (e.g., road maps).</li>
+        <li><strong>Traversals:</strong> Depth-First Search (DFS) and Breadth-First Search (BFS) for exploring networks.</li>
+        <li><strong>Applications:</strong> Social networks, routing, and navigation systems.</li>
+    </ul>
+
+    <h3>7. What about sorting and searching algorithms?</h3>
+    <p><strong>Sorting Algorithms:</strong></p>
+    <ul>
+        <li><strong>Simple Algorithms:</strong> Bubble Sort works well for small datasets.</li>
+        <li><strong>Efficient Algorithms:</strong> Quick Sort and Merge Sort are suitable for large datasets.</li>
+    </ul>
+    <p><strong>Searching Algorithms:</strong></p>
+    <ul>
+        <li><strong>Linear Search:</strong> Scans each element, slower but works with unsorted data.</li>
+        <li><strong>Binary Search:</strong> Operates on sorted data for faster performance.</li>
+    </ul>
+    <p><strong>Real-life Applications:</strong></p>
+    <ul>
+        <li>Sorting algorithms rank search results or organize data.</li>
+        <li>Searching algorithms locate contacts or find optimal paths in maps.</li>
+    </ul>
+</div>
+
+
+   <!-- SDG Mapping Section -->
+<div id="sdg-mapping" class="section">
+    <h2>SDG Mapping</h2>
+
+    <!-- Industrial Expansion Section -->
+    <div class="business-case" id="industrial-expansion">
+        <h3>1. Industrial Expansion 🏭</h3>
+        <p>Chitranagari is ready to level up its industrial game! The goal is to establish the city as a prime hub for industrial development, while staying true to sustainable growth. By creating dedicated industrial zones for small, medium, and large-scale industries, we’re ensuring the perfect balance of growth and responsibility. Here’s how it aligns with SDG 11:</p>
+
+        <h4>SDG 11 Target 11.3: Enhance inclusive and sustainable urbanization.</h4>
+        <p>These industrial zones will be designed with sustainable infrastructure—roads, power, waste management—creating jobs while keeping the environment intact. It’s all about inclusive growth, attracting investments while minimizing harm to the planet.</p>
+
+        <h4>SDG 11 Target 11.6: Reduce environmental impact of cities.</h4>
+        <p>With a focus on green manufacturing and carbon-neutral goals, Chitranagari is setting a standard for industries that grow but don’t pollute. We’re serious about sustainability, ensuring that growth doesn’t come at the expense of the environment.</p>
+    </div>
+
+    <!-- Healthcare Infrastructure Section -->
+    <div class="business-case" id="healthcare-infrastructure">
+        <h3>2. Healthcare Infrastructure 🏥</h3>
+        <p>A healthy city is a happy city, and Chitranagari plans to lead the way in smart healthcare. We’re building a cutting-edge healthcare ecosystem to make sure everyone has access to quality care. Here’s how we’re aligning with SDG 11:</p>
+
+        <h4>SDG 11 Target 11.2: Ensure access to affordable and sustainable transport systems for all.</h4>
+        <p>With digital health services and well-connected healthcare centers, we’re making healthcare accessible for everyone—especially the elderly, children, and those in vulnerable situations. Whether it’s a remote consultation or a visit to the community health center, getting care is as easy as it should be.</p>
+
+        <h4>SDG 11 Target 11.1: Ensure access to adequate, safe, and affordable housing.</h4>
+        <p>Through preventive healthcare initiatives like fitness zones and wellness programs, we’re helping residents stay healthy and avoid strain on health systems. It’s a proactive approach to building a healthier, more resilient community.</p>
+
+        <h4>SDG 11 Target 11.C: Support developing countries with sustainable and resilient buildings.</h4>
+        <p>Our integration of AI and IoT in healthcare systems sets a global example, offering a model for developing cities to follow in providing smarter, more resilient healthcare solutions.</p>
+    </div>
+
+    <!-- Education Hub Section -->
+    <div class="business-case" id="education-hub">
+        <h3>3. Education Hub 🎓</h3>
+        <p>Chitranagari is transforming into an education powerhouse, with top-notch schools, colleges, and research institutions. The plan is to create an environment where learning is futuristic and inclusive. Here’s how this ties into SDG 11:</p>
+
+        <h4>SDG 11 Target 11.4: Safeguard cultural and natural heritage.</h4>
+        <p>Education in Chitranagari will not just be about textbooks. It’s about integrating cultural heritage into the curriculum, teaching students the importance of preserving local traditions while embracing innovation.</p>
+
+        <h4>SDG 11 Target 11.7: Provide universal access to safe, inclusive, and accessible green spaces.</h4>
+        <p>Our educational institutions will be designed with green spaces for learning and recreation, fostering a connection to nature while enhancing the overall educational experience. Smart campuses will blend education with environmental awareness.</p>
+
+        <h4>SDG 11 Target 11.A: Strengthen links between urban and rural areas.</h4>
+        <p>The focus on vocational training and skills development will ensure that students are not just ready for urban jobs but can also contribute to rural development. It’s about creating inclusive opportunities for all.</p>
+    </div>
+
+    <!-- Summary Section -->
+    <div class="summary">
+        <h3>In Summary:</h3>
+        <ul>
+            <li>Industrial Expansion contributes to SDG 11 by driving sustainable urban growth, attracting investments, and protecting the environment.</li>
+            <li>Healthcare Infrastructure focuses on accessibility and prevention, ensuring that every citizen has the opportunity to thrive in a healthier, more resilient city.</li>
+            <li>Education Hub supports inclusive growth by creating an education system that nurtures both modern skills and cultural preservation.</li>
+        </ul>
+        <p>With these business cases, Chitranagari is not just building a city—it’s building a future-proof, inclusive, and sustainable urban environment, making sure no one is left behind as we move forward together.</p>
+    </div>
+</div>
+
+
+<!-- Implementation Section -->
+<div id="implementation" class="section">
+    <div class="section-content">
+    <h1>Industrial Expansion 🏭</h1>
+    <hr>
+    
+    <h2>1. City Planning and Infrastructure (Graph & Shortest Path Algorithms)</h2>
+    <p><strong>Idea:</strong> Model the city's infrastructure and roads as a graph to optimize transportation routes.</p>
+    <p><strong>Description:</strong></p>
+    <ul>
+        <li><strong>Graph Representation:</strong> Nodes represent locations (industrial zones, factories, highways); edges represent roads and connections.</li>
+        <li><strong>Design Techniques:</strong>
+            <ul>
+                <li>Dijkstra’s Algorithm for finding the shortest path.</li>
+                <li>Floyd-Warshall or Bellman-Ford for calculating shortest paths between all points for traffic management.</li>
+                <li>Time Efficiency: Dijkstra’s algorithm has O(E log V) time complexity.</li>
+                <li>Space Efficiency: Space complexity is O(V + E), where V is the number of vertices (locations) and E is the number of edges (connections).</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h2>2. Industry Data Management (Hashing, Lookup Table, Binary Search Tree)</h2>
+    <p><strong>Idea:</strong> Efficiently manage and query data related to industries, employees, inventory, and resource allocation.</p>
+    <p><strong>Description:</strong></p>
+    <ul>
+        <li><strong>Hashing:</strong> Quick lookup for companies and product IDs.</li>
+        <li><strong>Lookup Table:</strong> Store fixed data like road names, area codes, and zones.</li>
+        <li><strong>Binary Search Tree (BST):</strong> Sort and manage companies or factories.</li>
+        <li><strong>Design Techniques:</strong>
+            <ul>
+                <li>AVL Tree or Red-Black Tree for balancing data to optimize queries.</li>
+                <li>Time Efficiency: Hashing offers O(1) lookups; BST operations are O(log n).</li>
+                <li>Space Efficiency: Hashing uses O(n) space; BST uses O(n) for storing nodes.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>3. Resource Allocation (Priority Queue/Heap)</h2>
+    <p><strong>Idea:</strong> Prioritize tasks such as repairs and deliveries in the industrial zones.</p>
+    <p><strong>Description:</strong></p>
+    <ul>
+        <li><strong>Min-Heap or Max-Heap:</strong> Prioritize tasks based on urgency.</li>
+        <li><strong>Design Techniques:</strong>
+            <ul>
+                <li>Greedy Technique: Always process the most urgent task.</li>
+                <li>Time Efficiency: Heap operations take O(log n).</li>
+                <li>Space Efficiency: The space complexity is O(n).</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>4. Dynamic Resource Allocation (Union-Find/Disjoint Set)</h2>
+    <p><strong>Idea:</strong> Dynamically manage resources shared between industrial zones.</p>
+    <p><strong>Description:</strong></p>
+    <ul>
+        <li><strong>Union-Find:</strong> Track and merge connected industrial zones working together on large projects.</li>
+        <li><strong>Design Techniques:</strong>
+            <ul>
+                <li>Union-Find for efficient merging and tracking of connected zones.</li>
+                <li>Time Efficiency: Union and find operations take O(α(n)), where α is the inverse Ackermann function.</li>
+                <li>Space Efficiency: The space complexity is O(n).</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>5. Industrial Zone Growth (Binary Search Tree, AVL Tree, Segment Tree)</h2>
+    <p><strong>Idea:</strong> Manage and track the growth of industrial zones and their resources.</p>
+    <p><strong>Description:</strong></p>
+    <ul>
+        <li><strong>Segment Tree:</strong> Efficiently manage and query range-based data such as energy consumption or traffic in zones.</li>
+        <li><strong>AVL Tree:</strong> Maintain a balanced record of industrial zones.</li>
+        <li><strong>Design Techniques:</strong>
+            <ul>
+                <li>AVL Tree ensures efficient insertion and querying.</li>
+                <li>Segment Tree helps with range queries and updates.</li>
+                <li>Time Efficiency: Both AVL and Segment Tree operations are O(log n).</li>
+                <li>Space Efficiency: Space complexity is O(n) for both structures.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>6. Supply Chain Management (Queue/Deque)</h2>
+    <p><strong>Idea:</strong> Manage the flow of materials and goods between factories and zones.</p>
+    <p><strong>Description:</strong></p>
+    <ul>
+        <li><strong>Queue:</strong> Ensures that materials are processed in the correct order (FIFO).</li>
+        <li><strong>Deque:</strong> A double-ended queue for more complex operations like simultaneous loading and unloading.</li>
+        <li><strong>Design Techniques:</strong>
+            <ul>
+                <li>Lazy Propagation: Only update when material movement reaches a significant milestone.</li>
+                <li>Time Efficiency: Queue and deque operations are O(1).</li>
+                <li>Space Efficiency: Space complexity is O(n).</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>7. Factory Performance Monitoring (Sparse Table, Fenwick Tree)</h2>
+    <p><strong>Idea:</strong> Monitor factory performance metrics such as output, downtime, and efficiency.</p>
+    <p><strong>Description:</strong></p>
+    <ul>
+        <li><strong>Fenwick Tree:</strong> Efficiently track cumulative metrics like total output or downtime.</li>
+        <li><strong>Sparse Table:</strong> Efficiently query static data over large datasets.</li>
+        <li><strong>Design Techniques:</strong>
+            <ul>
+                <li>Fenwick Tree is ideal for range updates and queries.</li>
+                <li>Sparse Table is suitable for querying static data.</li>
+                <li>Time Efficiency: Fenwick Tree operations take O(log n), and Sparse Table operations are O(1).</li>
+                <li>Space Efficiency: Both structures have O(n) space complexity.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>8. Employee and Factory Management (List/Stack)</h2>
+    <p><strong>Idea:</strong> Manage dynamic operations like shifts, roles, and equipment checks.</p>
+    <p><strong>Description:</strong></p>
+    <ul>
+        <li><strong>List:</strong> Store and manage employee data such as roles, shifts, and salaries.</li>
+        <li><strong>Stack:</strong> Manage reversible operations such as equipment checks.</li>
+        <li><strong>Design Techniques:</strong>
+            <ul>
+                <li>Lazy Propagation: Only update employee data when necessary.</li>
+                <li>Time Efficiency: List and stack operations are O(1).</li>
+                <li>Space Efficiency: Space complexity is O(n) for the list and stack.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>9. Industrial Zone Optimization (Brute Force, Sorting Algorithms)</h2>
+    <p><strong>Idea:</strong> Optimize the layout of factories, equipment, and road networks in industrial zones.</p>
+    <p><strong>Description:</strong></p>
+    <ul>
+        <li><strong>Brute Force:</strong> Test all possible configurations of layouts and equipment placement.</li>
+        <li><strong>Sorting Algorithms:</strong> Sort zones or factories based on key metrics like revenue or employee count.</li>
+        <li><strong>Design Techniques:</strong>
+            <ul>
+                <li>Brute Force can be computationally expensive but exhaustive.</li>
+                <li>Sorting Algorithms (e.g., Merge Sort or Quick Sort) help organize data efficiently.</li>
+                <li>Time Efficiency: Sorting operations take O(n log n).</li>
+                <li>Space Efficiency: Sorting algorithms require O(n) space.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>10. Urban Traffic Management (BFS/DFS)</h2>
+    <p><strong>Idea:</strong> Optimize traffic flow and routing between industrial zones.</p>
+    <p><strong>Description:</strong></p>
+    <ul>
+        <li><strong>BFS:</strong> Use Breadth-First Search to compute the shortest path between zones, considering traffic congestion.</li>
+        <li><strong>DFS:</strong> Use Depth-First Search to explore all potential routes, ensuring redundancy and alternative routes.</li>
+        <li><strong>Design Techniques:</strong>
+            <ul>
+                <li>Lazy Propagation: Only compute new routes when necessary.</li>
+                <li>Time Efficiency: BFS has O(V + E) complexity, and DFS has O(V + E) as well.</li>
+                <li>Space Efficiency: Both algorithms have O(V + E) space complexity.</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+
+    <!-- Healthcare Infrastructure Section -->
+    <div class="section-content">
+        <h1>Healthcare Infrastructure 🏥</h1>
+<hr>
+<h2>1. Patient Management (Binary Search Tree, AVL Tree)</h2>
+<p><strong>Idea:</strong> Efficient management of patient records for fast access, updates, and deletions.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Binary Search Tree (BST) and AVL Tree:</strong> Used to store patient records (sorted by patient ID or name), allowing for quick lookups, insertions, and deletions.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Divide and Conquer: Divide the search and update operations into subtrees, which are smaller and easier to manage.</li>
+            <li>Space and Time Tradeoff: AVL trees maintain balanced nodes, optimizing search time at the cost of extra memory for balancing operations.</li>
+            <li>Time Efficiency: Search, insert, and delete operations are O(log n) in an AVL tree.</li>
+            <li>Space Efficiency: The space complexity is O(n) as it stores patient records.</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>2. Emergency Response System (Priority Queue/Heap)</h2>
+<p><strong>Idea:</strong> Prioritize critical patients for emergency treatment.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Priority Queue (using a Heap):</strong> Prioritizes patients based on the severity of their condition.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Greedy Technique: Always choose the most urgent case in each iteration.</li>
+            <li>Time Efficiency: Inserting into and removing from a heap is O(log n).</li>
+            <li>Space Efficiency: The heap uses O(n) space for storing patient data.</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>3. Healthcare Resource Allocation (Graph, Dijkstra’s Algorithm)</h2>
+<p><strong>Idea:</strong> Allocate resources efficiently by modeling healthcare facilities as a graph.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Graph Representation:</strong> Nodes represent hospitals and resources; edges represent the availability of connections or resources.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Dynamic Programming: Use Dijkstra’s algorithm to find the optimal path between hospitals and resource centers.</li>
+            <li>Time Efficiency: Dijkstra’s algorithm has a time complexity of O(E log V) with a priority queue.</li>
+            <li>Space Efficiency: The space complexity is O(V + E) as it stores the graph and calculates the shortest paths.</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>4. Appointment Scheduling (Queue/Linked List)</h2>
+<p><strong>Idea:</strong> Manage and organize patient appointments efficiently.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Queue:</strong> Patients are processed in the order of their appointment (FIFO).</li>
+    <li><strong>Linked List:</strong> For dynamic appointment scheduling where times can be adjusted or rescheduled.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Lazy Propagation: Only update appointment statuses when necessary (e.g., after confirmation).</li>
+            <li>Time Efficiency: O(1) for insertion and deletion in a queue or linked list.</li>
+            <li>Space Efficiency: The space complexity is O(n) as it stores the list of appointments.</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>5. Drug Inventory Management (Hashing, Lookup Table)</h2>
+<p><strong>Idea:</strong> Maintain drug inventory and ensure availability when needed.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Hashing:</strong> Use hash tables for efficient storage and retrieval of drug information.</li>
+    <li><strong>Lookup Table:</strong> A simple table to store drug details that do not change frequently (like names, dosages, and prices).</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Space and Time Tradeoff: Hashing offers quick access but requires more memory.</li>
+            <li>Time Efficiency: Hash table lookups are O(1).</li>
+            <li>Space Efficiency: The space complexity is O(n), where n is the number of drugs in the inventory.</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>6. Patient Data Search (Trie, Hashing)</h2>
+<p><strong>Idea:</strong> Implement a fast search system for patient data.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Trie:</strong> Used for searching patient names or medical conditions based on prefixes.</li>
+    <li><strong>Hashing:</strong> Enables quick lookup of patient records by their unique IDs.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Pre-Computing: Precompute and store frequent search queries for fast access.</li>
+            <li>Time Efficiency: Trie operations are O(m), where m is the length of the word, and hash lookups are O(1).</li>
+            <li>Space Efficiency: Tries use O(m * n) space, where m is the average length of the words, and n is the number of words.</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>7. Healthcare Facility Network (Union-Find)</h2>
+<p><strong>Idea:</strong> Track the connectedness of healthcare facilities in the city.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Union-Find:</strong> Efficiently manage and merge healthcare facilities (hospitals, clinics) as new ones are added to the network.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Union-Find is efficient for managing connected components of healthcare facilities.</li>
+            <li>Time Efficiency: The time complexity for union and find operations is O(α(n)), where α is the inverse Ackermann function.</li>
+            <li>Space Efficiency: The space complexity is O(n), as we store the parent-child relationships.</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>8. Hospital Occupancy Tracking (Segment Tree)</h2>
+<p><strong>Idea:</strong> Track room or bed availability in real-time across hospitals.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Segment Tree:</strong> Allows efficient range queries and updates, useful for tracking room availability over time.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Dynamic Programming: Used to update room availability dynamically.</li>
+            <li>Time Efficiency: Query and update operations take O(log n).</li>
+            <li>Space Efficiency: Segment trees use O(n) space.</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>9. Healthcare Data Reporting (Fenwick Tree)</h2>
+<p><strong>Idea:</strong> Generate quick reports on healthcare metrics such as patient visits or treatment data.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Fenwick Tree:</strong> Efficiently handles cumulative frequency queries, which is useful for tracking healthcare data over time.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Pre-Computing: Precompute cumulative data for fast reporting.</li>
+            <li>Time Efficiency: Both updates and queries take O(log n) time.</li>
+            <li>Space Efficiency: The space complexity is O(n).</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>10. Medical Record History (Stack)</h2>
+<p><strong>Idea:</strong> Keep a stack of recent treatments or medical records for each patient.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Stack:</strong> Track the most recent treatments or records, with the ability to revert to a previous state if necessary.</li>
+    <li><strong>Pattern Recognition:</strong> Repeated actions of adding and removing records in LIFO order.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Backtracking: Use a stack for undoing treatments or actions that are not required.</li>
+            <li>Time Efficiency: Both push and pop operations take O(1) time.</li>
+            <li>Space Efficiency: The space complexity is O(n), where n is the number of records.</li>
+        </ul>
+    </li>
+</ul>
+</div>
+
+<!-- Education Hub Section -->
+    <div class="section-content">
+    <h1>Education Hub 🎓</h1>
+<hr>
+<h2>1. Smart Education System (Graph & Shortest Path Algorithms)</h2>
+<p><strong>Idea:</strong> Model the education network (schools, colleges, research institutions) as a graph to optimize communication and resource allocation.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Graph Representation:</strong> Nodes represent educational institutions; edges represent pathways or communication networks.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Dijkstra’s Algorithm or A* Search for optimizing travel paths between institutions.</li>
+            <li>Time Efficiency: Dijkstra’s algorithm runs in O(E log V).</li>
+            <li>Space Efficiency: Space complexity is O(V + E).</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>2. E-learning Platforms and Resource Allocation (Hashing, Lookup Tables, Binary Search Tree)</h2>
+<p><strong>Idea:</strong> Efficiently manage e-learning resources and platform data such as course catalogs, student data, and faculty information.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Hashing:</strong> Use hash tables for fast access to student records, course data, and faculty information.</li>
+    <li><strong>Lookup Tables:</strong> Store fixed data such as course prerequisites, student enrollment status, or faculty availability.</li>
+    <li><strong>Binary Search Tree (BST):</strong> Maintain an ordered list of students, courses, or faculty members.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>AVL Tree or Red-Black Tree for maintaining sorted data for efficient searching.</li>
+            <li>Time Efficiency: Hashing offers O(1) lookup, while BST operations take O(log n).</li>
+            <li>Space Efficiency: Hash tables use O(n), while BSTs use O(n).</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>3. Enrollment System (Priority Queue/Heap)</h2>
+<p><strong>Idea:</strong> Prioritize student enrollments based on available seats, course preferences, or admission scores.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Min-Heap or Max-Heap:</strong> Prioritize students for course enrollment based on score, preference, or availability.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Greedy Technique: Always enroll the highest-priority student available.</li>
+            <li>Time Efficiency: Heap operations run in O(log n).</li>
+            <li>Space Efficiency: The space complexity is O(n).</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>4. Classroom Scheduling (Interval Tree, Segment Tree)</h2>
+<p><strong>Idea:</strong> Optimize classroom scheduling and resource allocation across different institutions.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Segment Tree:</strong> Use for managing time slots and available classrooms across multiple institutions.</li>
+    <li><strong>Interval Tree:</strong> Efficiently manage classroom availability and prevent conflicts during scheduling.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Segment Tree allows for efficient querying of available time slots.</li>
+            <li>Interval Tree handles overlapping class schedules.</li>
+            <li>Time Efficiency: Both trees provide O(log n) query and update time.</li>
+            <li>Space Efficiency: Space complexity for both trees is O(n).</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>5. Student and Faculty Management (Linked List, Binary Search Tree)</h2>
+<p><strong>Idea:</strong> Manage dynamic data about students, faculty, and staff, including shifts, roles, and activities.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Linked List:</strong> Use for dynamically managing student or faculty details, where data might change frequently (e.g., grades, shifts).</li>
+    <li><strong>Binary Search Tree (BST):</strong> Organize students or faculty members based on specific attributes like GPA or department.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Lazy Propagation: Update records only when necessary, especially in large institutions.</li>
+            <li>Time Efficiency: Linked list operations are O(1) for insertion and deletion, and BST operations take O(log n).</li>
+            <li>Space Efficiency: Linked lists and BSTs both require O(n) space.</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>6. Online Examination System (Queue/Deque)</h2>
+<p><strong>Idea:</strong> Manage the flow of students during online examinations, ensuring efficient exam scheduling and result processing.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Queue:</strong> Manage students waiting for exam entry, ensuring fair processing in a First-In-First-Out (FIFO) manner.</li>
+    <li><strong>Deque:</strong> A double-ended queue can manage students entering or leaving the exam in different phases.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Lazy Propagation: Only update records when a student enters or exits the exam.</li>
+            <li>Time Efficiency: Queue and deque operations are O(1).</li>
+            <li>Space Efficiency: The space complexity is O(n).</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>7. Performance Analytics (Fenwick Tree, Sparse Table)</h2>
+<p><strong>Idea:</strong> Track and analyze performance data such as exam scores, attendance, and project submissions.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Fenwick Tree:</strong> Track cumulative performance metrics such as total grades or attendance.</li>
+    <li><strong>Sparse Table:</strong> Efficiently query performance data across large datasets for static queries like overall exam performance.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Fenwick Tree helps with cumulative performance tracking.</li>
+            <li>Sparse Table is ideal for static range queries.</li>
+            <li>Time Efficiency: Fenwick Tree operations take O(log n), and Sparse Table queries are O(1).</li>
+            <li>Space Efficiency: Both structures use O(n) space.</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>8. Scholarship Management (Priority Queue/Heap)</h2>
+<p><strong>Idea:</strong> Manage scholarships by prioritizing students based on merit, need, and other factors.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Min-Heap or Max-Heap:</strong> Use a heap to prioritize students for scholarships based on their scores or financial need.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Greedy Technique: Allocate scholarships to the most eligible students based on priority.</li>
+            <li>Time Efficiency: Heap operations are O(log n).</li>
+            <li>Space Efficiency: The space complexity is O(n).</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>9. Course Recommendation System (Graph, Dynamic Programming)</h2>
+<p><strong>Idea:</strong> Recommend courses to students based on their past choices, interests, and academic performance.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Graph:</strong> Represent course prerequisites and student interests as a graph to recommend the next best course.</li>
+    <li><strong>Dynamic Programming:</strong> Use dynamic programming to find the optimal course selection based on prior selections and student preferences.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Dynamic Programming can optimize the recommendation process.</li>
+            <li>Time Efficiency: The time complexity for dynamic programming is typically O(n²) or O(n log n) based on the problem size.</li>
+            <li>Space Efficiency: Space complexity is O(n) for storing previous results.</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>10. Virtual Labs and Simulations (Queue/Deque, Graph)</h2>
+<p><strong>Idea:</strong> Manage virtual labs and simulations where students can conduct experiments in an online environment.</p>
+<p><strong>Description:</strong></p>
+<ul>
+    <li><strong>Queue/Deque:</strong> Manage the queue of students awaiting access to virtual labs or simulations.</li>
+    <li><strong>Graph:</strong> Model the experiments as a graph to track various steps in a virtual experiment.</li>
+    <li><strong>Design Techniques:</strong>
+        <ul>
+            <li>Lazy Propagation: Only update when the student enters or finishes an experiment.</li>
+            <li>Time Efficiency: Queue and deque operations are O(1).</li>
+            <li>Space Efficiency: The space complexity is O(n).</li>
+        </ul>
+    </li>
+</ul>
+</div>
+</div>
+
+
+
+   <!-- Contact Section -->
+<div id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:01fe23bcs@kletech.ac.in">01fe23bcs@kletech.ac.in</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/aditi-choudhary-8a61092bb" target="_blank">linkedin.com/in/aditi-choudhary-8a61092bb</a></p>
+    <p>GitHub: <a href="https://github.com/01fe23bcs128" target="_blank">https://github.com/01fe23bcs128</a></p>
+    <p>💬 Feel free to say hi or share your thoughts on my work!</p>
+</div>
+
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            // Show the selected section
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.add('active');
+        }
+    </script>
+</body>
+</html>
