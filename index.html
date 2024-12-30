@@ -547,20 +547,33 @@
     </li>
 </ul>
 
-<h2>6. Patient Data Search (Trie, Hashing)</h2>
+<h2>6. Patient Data Search (Trie, Hashing, Knuth-Morris-Pratt Algorithm)</h2>
 <p><strong>Idea:</strong> Implement a fast search system for patient data.</p>
 <p><strong>Description:</strong></p>
 <ul>
     <li><strong>Trie:</strong> Used for searching patient names or medical conditions based on prefixes.</li>
     <li><strong>Hashing:</strong> Enables quick lookup of patient records by their unique IDs.</li>
+    <li><strong>Knuth-Morris-Pratt Algorithm (KMP):</strong> A string-matching algorithm that enables efficient substring search within patient records, such as medical conditions or diagnoses.</li>
     <li><strong>Design Techniques:</strong>
         <ul>
             <li>Pre-Computing: Precompute and store frequent search queries for fast access.</li>
-            <li>Time Efficiency: Trie operations are O(m), where m is the length of the word, and hash lookups are O(1).</li>
-            <li>Space Efficiency: Tries use O(m * n) space, where m is the average length of the words, and n is the number of words.</li>
+            <li>Time Efficiency: 
+                <ul>
+                    <li>Trie operations are O(m), where m is the length of the word.</li>
+                    <li>Hash lookups are O(1).</li>
+                    <li>KMP search is O(n + m), where n is the length of the text and m is the length of the pattern.</li>
+                </ul>
+            </li>
+            <li>Space Efficiency: 
+                <ul>
+                    <li>Tries use O(m * n) space, where m is the average length of the words and n is the number of words.</li>
+                    <li>KMP requires O(m) space for pattern preprocessing.</li>
+                </ul>
+            </li>
         </ul>
     </li>
 </ul>
+
 
 <h2>7. Healthcare Facility Network (Union-Find)</h2>
 <p><strong>Idea:</strong> Track the connectedness of healthcare facilities in the city.</p>
